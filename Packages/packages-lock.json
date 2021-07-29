@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.github.artembelaev-ural.xmononode": {
-      "version": "https://github.com/ArtemBelaev-ural/XMonoNode.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "c01d9cdd77bcc2dcea32dc11516f1dbfb4ba104f"
-    },
     "com.unity.collab-proxy": {
       "version": "1.5.7",
       "depth": 0,
