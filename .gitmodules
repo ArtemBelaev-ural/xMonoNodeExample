@@ -1,0 +1,3 @@
+[submodule "Assets/Scripts/XMonoNode"]
+	path = Assets/Scripts/XMonoNode
+	url = https://github.com/ArtemBelaev-ural/XMonoNode.git
