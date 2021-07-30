@@ -272,6 +272,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Physics material
       objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065630, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: curve.m_Curve.Array.data[0].time
+      value: -0.0036887727
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065630, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: curve.m_Curve.Array.data[0].value
+      value: 0.6569812
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065630, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: curve.m_Curve.Array.data[0].inSlope
+      value: 1.3364562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065630, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: curve.m_Curve.Array.data[1].inSlope
+      value: 1.3364562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065630, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: curve.m_Curve.Array.data[0].outSlope
+      value: 1.3364562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065630, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: curve.m_Curve.Array.data[1].outSlope
+      value: 1.3364562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065632, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: testValue
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065635, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: Default
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065635, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: lerpDown
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
       value: Test XSoundGraph
@@ -345,15 +381,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 869681667}
-  - {fileID: 869681666}
-  - {fileID: 869681665}
-  - {fileID: 869681664}
-  - {fileID: 869681663}
-  - {fileID: 869681662}
-  - {fileID: 869681661}
-  - {fileID: 869681660}
   - {fileID: 869681659}
+  - {fileID: 869681660}
+  - {fileID: 869681661}
+  - {fileID: 869681662}
+  - {fileID: 869681663}
+  - {fileID: 869681664}
+  - {fileID: 869681665}
+  - {fileID: 869681666}
+  - {fileID: 869681667}
   NodeToTestExecute: :- all nodes
 --- !u!114 &869681659
 MonoBehaviour:
