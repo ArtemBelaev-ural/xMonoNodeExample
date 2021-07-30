@@ -308,6 +308,10 @@ PrefabInstance:
       propertyPath: lerpDown
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
       value: Test XSoundGraph
@@ -404,7 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: 24, y: 56}
+  position: {x: 56, y: 104}
   ports:
     keys:
     - audioOutput
@@ -440,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: -168, y: 56}
+  position: {x: -136, y: 104}
   ports:
     keys:
     - whilePlay
@@ -534,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: 24, y: -328}
+  position: {x: 56, y: -280}
   ports:
     keys:
     - audioOutput
@@ -570,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: -168, y: -328}
+  position: {x: -136, y: -280}
   ports:
     keys:
     - whilePlay
@@ -664,7 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: -760, y: -40}
+  position: {x: -728, y: 8}
   ports:
     keys:
     - output
@@ -698,7 +702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: -504, y: -168}
+  position: {x: -472, y: -120}
   ports:
     keys:
     - Switch
@@ -784,7 +788,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
   _name: Case
-  Switch: {fileID: 0}
+  Switch: {fileID: 13400000, guid: 33dea1b90d42f2641a15eefc73cf6f26, type: 2}
   Case:
   - {fileID: 13400000, guid: e9cdf290fbb7e8f45974d12dcc39916a, type: 2}
   - {fileID: 13400000, guid: 33dea1b90d42f2641a15eefc73cf6f26, type: 2}
@@ -801,7 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: -744, y: -264}
+  position: {x: -712, y: -216}
   ports:
     keys:
     - whilePlay
@@ -892,7 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: 24, y: -136}
+  position: {x: 56, y: -88}
   ports:
     keys:
     - audioOutput
@@ -928,7 +932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 869681658}
-  position: {x: -168, y: -136}
+  position: {x: -136, y: -88}
   ports:
     keys:
     - whilePlay
