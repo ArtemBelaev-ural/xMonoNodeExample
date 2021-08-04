@@ -136,6 +136,9 @@ GameObject:
   - component: {fileID: 51869666}
   - component: {fileID: 51869665}
   - component: {fileID: 51869664}
+  - component: {fileID: 51869671}
+  - component: {fileID: 51869670}
+  - component: {fileID: 51869669}
   m_Layer: 0
   m_Name: Test sound nodes in FlowNodeGraph
   m_TagString: Untagged
@@ -156,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
-  position: {x: 120, y: 72}
+  position: {x: 72, y: 232}
   ports:
     keys:
     - whilePlay
@@ -250,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
-  position: {x: -344, y: 104}
+  position: {x: -392, y: 264}
   ports:
     keys:
     - audioOutput
@@ -289,6 +292,9 @@ MonoBehaviour:
   - {fileID: 51869667}
   - {fileID: 51869665}
   - {fileID: 51869664}
+  - {fileID: 51869671}
+  - {fileID: 51869670}
+  - {fileID: 51869669}
   EventToTestExecute: :- all execute nodes
 --- !u!114 &51869667
 MonoBehaviour:
@@ -303,7 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
-  position: {x: -296, y: -24}
+  position: {x: -344, y: 136}
   ports:
     keys:
     - FlowOutput
@@ -336,6 +342,168 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &51869669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51869663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 51869666}
+  position: {x: -232, y: -24}
+  ports:
+    keys:
+    - audioOutput
+    values:
+    - _fieldName: audioOutput
+      _label: 
+      _node: {fileID: 51869669}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 51869670}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _name: X Sound Node Source
+  soundId: 42
+  audioOutput:
+    list:
+    - {fileID: 0}
+--- !u!114 &51869670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51869663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 51869666}
+  position: {x: 168, y: -88}
+  ports:
+    keys:
+    - whilePlay
+    - onEnd
+    - audioInput
+    - Playing
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 51869670}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 51869670}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: audioInput
+      _label: 
+      _node: {fileID: 51869670}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 51869669}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 51869670}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 51869670}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 51869671}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 51869670}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Play
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &51869671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51869663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad9e605afee5004b8cd245751ef90cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 51869666}
+  position: {x: -120, y: -120}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _label: Execute
+      _node: {fileID: 51869671}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 51869670}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Execute Event
 --- !u!1 &148992024
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +552,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &363350927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 363350928}
+  m_Layer: 0
+  m_Name: Test node palette
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &363350928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363350927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -485,11 +683,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 869681659, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
+    - target: {fileID: 869681658, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.size
+      value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 869681661, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+    - target: {fileID: 869681658, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[9]
+      value: 
+      objectReference: {fileID: 869681659}
+    - target: {fileID: 869681659, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
@@ -497,41 +699,73 @@ PrefabInstance:
       propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142943993071811, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[4].connections.Array.data[1].node
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142943993071812, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142943993071813, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[1].node
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3521142943993071814, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[4].connections.Array.data[1].node
+      propertyPath: position.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[8]
+      value: 
+      objectReference: {fileID: 1199636206}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[9]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944026937376, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[1].node
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[10]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944241891464, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[0].node
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[11]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944241891466, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[12]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944241891467, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[13]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944279065637, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[4].connections.Array.data[0].node
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[14]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[15]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[16]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[17]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[18]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[19]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[20]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -504
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: -88
       objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
@@ -581,14 +815,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944335574292, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[0].node
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081013, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[0].node
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3521142944337081014, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: audioOutput.list.Array.data[0]
       value: 
@@ -613,60 +839,87 @@ PrefabInstance:
       propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944812499457, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[4].connections.Array.data[0].node
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944812499464, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+    - target: {fileID: 3521142945208130330, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142945012991763, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[0].node
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945149681206, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+    - target: {fileID: 3521142945208130331, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142945208130328, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: position.y
-      value: -24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945208130328, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[4].connections.Array.data[0].node
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450219, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[1].node
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450222, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+    - target: {fileID: 3521142945208130333, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: output.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142945363701098, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[1].connections.Array.data[0].node
-      value: 
+    - target: {fileID: 4741111185216026871, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -216
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142945385355712, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: ports.values.Array.data[4].connections.Array.data[0].node
-      value: 
+    - target: {fileID: 4741111185216026871, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: -232
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142945385355714, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
+    - target: {fileID: 4808768407267580469, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: pitch
+      value: 0.9973242
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808768407267580469, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808768407267580469, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+--- !u!1 &869681657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 256208615773902893, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &869681658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 869681658, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869681657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5df17e0f194b346b0c86fa95b1e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &869681659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869681657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61bf4737de262c409be231665159a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 869681658}
+  position: {x: -133.78146, y: 194.66393}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _label: 
+      _node: {fileID: 869681659}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: 'PlayParam: String'
+  output: 
+  testValue: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,3 +1003,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1199636205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3521142944279065641, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199636206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199636205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b87eba1314b20c489de3c67fcd45ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1199636213}
+  position: {x: -216, y: -632}
+  ports:
+    keys:
+    - First
+    - Second
+    - Result
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: First
+      _label: 
+      _node: {fileID: 1199636206}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Second
+      _label: 
+      _node: {fileID: 1199636206}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Result
+      _label: 
+      _node: {fileID: 1199636206}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 1199636206}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 1199636206}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Concat String
+  First: 
+  Second: 
+  Result: 
+--- !u!114 &1199636213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199636205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5df17e0f194b346b0c86fa95b1e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
