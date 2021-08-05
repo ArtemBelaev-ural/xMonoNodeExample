@@ -2299,7 +2299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142944279065636}
-  position: {x: -24, y: -136}
+  position: {x: 8, y: -104}
   ports:
     keys:
     - whilePlay
@@ -2481,13 +2481,16 @@ MonoBehaviour:
       - fieldName: input
         node: {fileID: 3521142944279065630}
         reroutePoints: []
+      - fieldName: Default
+        node: {fileID: 3521142944279065635}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   _name: 'Accelerator: float'
   output: 0
-  testValue: 0.1
+  testValue: 0
 --- !u!114 &3521142944279065635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2501,7 +2504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142944279065636}
-  position: {x: 168, y: 56}
+  position: {x: 200, y: 120}
   ports:
     keys:
     - Default
@@ -2517,7 +2520,10 @@ MonoBehaviour:
       _node: {fileID: 3521142944279065635}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 3521142944279065632}
+        reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -2593,8 +2599,8 @@ MonoBehaviour:
       _dynamic: 0
   _name: Engine
   Default: 0
-  input: 0
-  lerpOutput: 1
+  input: 0.66191113
+  lerpOutput: 0.66191113
   lerpUp: 10000
   lerpDown: 4
 --- !u!114 &3521142944279065634
@@ -2610,7 +2616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142944279065636}
-  position: {x: 360, y: -136}
+  position: {x: 360, y: -104}
   ports:
     keys:
     - audioInput
@@ -2683,7 +2689,7 @@ MonoBehaviour:
     list: []
   audioOutput:
     list: []
-  pitch: 1
+  pitch: 0.66191113
 --- !u!114 &3521142944279065633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2697,7 +2703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142944279065636}
-  position: {x: -184, y: -72}
+  position: {x: -168, y: -88}
   ports:
     keys:
     - loop
@@ -2759,7 +2765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142944279065636}
-  position: {x: -88, y: 104}
+  position: {x: -104, y: 216}
   ports:
     keys:
     - input
@@ -2792,8 +2798,8 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: Engine Characteristic
-  input: 0.5
-  output: 1.4990339
+  input: 0
+  output: 0.66191113
   curve:
     serializedVersion: 2
     m_Curve:
@@ -2831,7 +2837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142944279065636}
-  position: {x: -216, y: -232}
+  position: {x: -152, y: -200}
   ports:
     keys:
     - FlowOutput

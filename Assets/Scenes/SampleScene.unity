@@ -683,12 +683,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.size
-      value: 9
+    - target: {fileID: 3521142944279065632, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -360
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065633, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -168
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065633, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: -56
       objectReference: {fileID: 0}
     - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[9]
+      propertyPath: nodes.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
@@ -739,23 +751,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142945149681204, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: graph
-      value: 
-      objectReference: {fileID: 869681656}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
---- !u!114 &869681656 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-  m_PrefabInstance: {fileID: 869681655}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb5df17e0f194b346b0c86fa95b1e1e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
