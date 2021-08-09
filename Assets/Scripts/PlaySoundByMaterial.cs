@@ -15,7 +15,7 @@ public class PlaySoundByMaterial : MonoBehaviour
     {
         if (graph != null)
         {
-            graph.Execute(material);
+            graph.Flow(material);
         }
     }
 }

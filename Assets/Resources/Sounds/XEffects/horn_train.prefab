@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 7697778375750297097}
   - component: {fileID: 2972007023465984495}
   - component: {fileID: 9060132588543838406}
-  - component: {fileID: 6735290845607936343}
   m_Layer: 0
   m_Name: horn_train
   m_TagString: Untagged
@@ -217,8 +216,6 @@ MonoBehaviour:
   - {fileID: 5048594353163516847}
   - {fileID: 2972007023465984495}
   - {fileID: 9060132588543838406}
-  - {fileID: 6735290845607936343}
-  EventToTestExecute: Execute Event
 --- !u!114 &2972007023465984495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,34 +360,3 @@ MonoBehaviour:
   Min: 0.95
   Max: 1.05
   Result: 0.98932576
---- !u!114 &6735290845607936343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3852224901902527314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7394bd8ab4f62dd49a3a8b80480c8dda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 7697778375750297097}
-  position: {x: -184, y: 296}
-  ports:
-    keys:
-    - output
-    values:
-    - _fieldName: output
-      _label: 
-      _node: {fileID: 6735290845607936343}
-      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: 'PlayParam: Vector3'
-  output: {x: 0, y: 0, z: 0}
-  testValue: {x: 0, y: 0, z: 0}
