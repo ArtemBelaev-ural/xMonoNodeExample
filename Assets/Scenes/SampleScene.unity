@@ -652,14 +652,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3521142944026937379, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
       value: Test XSoundGraph
@@ -707,30 +699,6 @@ PrefabInstance:
     - target: {fileID: 3521142944315417221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945208130330, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: soundId
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945208130330, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945208130331, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: soundId
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945208130331, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993198236300736917, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993553288350328807, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
