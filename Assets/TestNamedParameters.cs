@@ -15,6 +15,9 @@ public class TestNamedParameters : MonoBehaviour
     [SerializeField, Range(0.1f, 2f)]
     private float           pitch = 0.8f;
 
+    [SerializeField]
+    private bool            grounded = true;       
+
 
     private void Start()
     {
@@ -35,7 +38,8 @@ public class TestNamedParameters : MonoBehaviour
         sound.UpdateParameters(new Dictionary<string, object>
         {
             { nameof(volume), volume },
-            { nameof(pitch),  pitch }
+            { nameof(pitch),  pitch },
+            { nameof(grounded), grounded}
         });
     }
 }
