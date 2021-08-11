@@ -35,6 +35,7 @@ public class SoundGetterTest : MonoBehaviour
         wheel.motorTorque = motorTorque;
         rpm = wheel.rpm;
         brakeTorcue = wheel.brakeTorque;
+        
 
 
         wheel.GetWorldPose(out Vector3 pos, out Quaternion rot);
