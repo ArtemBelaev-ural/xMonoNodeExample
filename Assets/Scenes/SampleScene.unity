@@ -535,7 +535,7 @@ MonoBehaviour:
   sound:
     pathToContainers: Sounds/XContainers/
     containerFileName: horn
-    graphId: horn_train
+    graphId: engine
     drawPathToContainers: 0
     graphPrefab: {fileID: 0}
 --- !u!4 &148992026
@@ -699,6 +699,14 @@ PrefabInstance:
     - target: {fileID: 3521142944315417221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435413629462325145, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: pitch
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435413629462325145, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: grounded
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}

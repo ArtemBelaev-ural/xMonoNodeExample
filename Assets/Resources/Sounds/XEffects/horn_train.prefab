@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7697778375750297097}
   - component: {fileID: 2972007023465984495}
   - component: {fileID: 9060132588543838406}
+  - component: {fileID: 1156095237733030338}
   m_Layer: 0
   m_Name: horn_train
   m_TagString: Untagged
@@ -55,13 +56,16 @@ MonoBehaviour:
     - FlowOutput
     values:
     - _fieldName: FlowOutput
-      _label: Execute
+      _label: OnFlow
       _node: {fileID: 2569818299664212476}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: FlowInput
         node: {fileID: 2756464570547956810}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 1156095237733030338}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -216,6 +220,7 @@ MonoBehaviour:
   - {fileID: 5048594353163516847}
   - {fileID: 2972007023465984495}
   - {fileID: 9060132588543838406}
+  - {fileID: 1156095237733030338}
 --- !u!114 &2972007023465984495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +280,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
       _label: 
@@ -352,6 +357,9 @@ MonoBehaviour:
       - fieldName: pitch
         node: {fileID: 2972007023465984495}
         reroutePoints: []
+      - fieldName: Text
+        node: {fileID: 1156095237733030338}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -359,4 +367,62 @@ MonoBehaviour:
   _name: Get Random Float
   Min: 0.95
   Max: 1.05
-  Result: 0.98932576
+  Result: 0.96426576
+--- !u!114 &1156095237733030338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3852224901902527314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542da5e0df5d9e545b590dfd20f13290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 7697778375750297097}
+  position: {x: 101.96756, y: 193.09378}
+  ports:
+    keys:
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Text
+      _label: 
+      _node: {fileID: 1156095237733030338}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 9060132588543838406}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 1156095237733030338}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 2569818299664212476}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 1156095237733030338}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Log
+  Text: 
