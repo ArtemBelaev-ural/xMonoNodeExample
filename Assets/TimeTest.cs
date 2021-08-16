@@ -17,6 +17,9 @@ public class TimeTest : MonoBehaviour
     [SerializeField]
     private bool WaitForFlow = false;
 
+    [SerializeField]
+    private bool WaitForNextFrame = false;
+
     void Update()
     {
         if (graph == null)
@@ -28,7 +31,12 @@ public class TimeTest : MonoBehaviour
         {
             { nameof(WaitUntil), WaitUntil },
             { nameof(WaitWhile), WaitWhile },
-            { nameof(WaitForFlow), WaitForFlow }
+            { nameof(WaitForFlow), WaitForFlow },
+            { nameof(WaitForNextFrame), WaitForNextFrame}
         });
+        if (WaitForNextFrame)
+        {
+            WaitForNextFrame = false;
+        }
     }
 }
