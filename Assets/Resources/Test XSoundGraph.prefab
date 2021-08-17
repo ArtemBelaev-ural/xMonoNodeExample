@@ -212,8 +212,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -258,26 +259,33 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 869681660}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: Case 1
-        node: {fileID: 869681664}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 869681660}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 869681660}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 869681660}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -342,8 +350,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -388,8 +397,28 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 869681662}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 869681662}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Play
+      _label: 
       _node: {fileID: 869681662}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -398,16 +427,6 @@ MonoBehaviour:
         node: {fileID: 869681664}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
-      _node: {fileID: 869681662}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -468,8 +487,8 @@ MonoBehaviour:
     keys:
     - Switch
     - Case
-    - FlowInput
     - FlowOutput
+    - FlowInput
     - Case 0
     - Case 1
     values:
@@ -496,21 +515,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Switch
-      _node: {fileID: 869681664}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 869681668}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: Default
+      _label: 
       _node: {fileID: 869681664}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -522,15 +528,25 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 869681664}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 869681668}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: Case 0
       _label: 
       _node: {fileID: 869681664}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 869681667}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -540,10 +556,7 @@ MonoBehaviour:
       _node: {fileID: 869681664}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 869681660}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -609,8 +622,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -655,26 +669,33 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 869681667}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: Case 0
-        node: {fileID: 869681664}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 869681667}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 869681667}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 869681667}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -859,11 +880,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -878,32 +900,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142943993071813}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: onEnd
-        node: {fileID: 3521142943993071813}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142943993071813}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142943993071813}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -939,6 +952,19 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142943993071813}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: onEnd
+        node: {fileID: 3521142943993071813}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Repeat
   audioInput:
@@ -1007,8 +1033,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -1056,8 +1083,28 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142943993071814}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142943993071814}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Play
+      _label: 
       _node: {fileID: 3521142943993071814}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1065,23 +1112,7 @@ MonoBehaviour:
       - fieldName: FlowOutput
         node: {fileID: 3521142943993071815}
         reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
-      _node: {fileID: 3521142943993071814}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1107,8 +1138,8 @@ MonoBehaviour:
   ports:
     keys:
     - WaitSeconds
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: WaitSeconds
       _label: 
@@ -1116,19 +1147,6 @@ MonoBehaviour:
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _label: 
-      _node: {fileID: 3521142943993071815}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: onEnd
-        node: {fileID: 3521142943993071814}
-        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1143,6 +1161,19 @@ MonoBehaviour:
         node: {fileID: 3521142943993071814}
         reroutePoints: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142943993071815}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: onEnd
+        node: {fileID: 3521142943993071814}
+        reroutePoints: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1230,8 +1261,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -1282,30 +1314,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142943993071811}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 9005973760150918132}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142943993071811}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1314,6 +1324,26 @@ MonoBehaviour:
         node: {fileID: 3521142943993071679}
         reroutePoints: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142943993071811}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142943993071811}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1339,8 +1369,8 @@ MonoBehaviour:
   ports:
     keys:
     - Text
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: Text
       _label: 
@@ -1349,6 +1379,16 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142943993071679}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1362,16 +1402,6 @@ MonoBehaviour:
         node: {fileID: 3521142943993071811}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142943993071679}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1394,8 +1424,8 @@ MonoBehaviour:
   ports:
     keys:
     - Text
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: Text
       _label: 
@@ -1404,6 +1434,16 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142943993071809}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1417,16 +1457,6 @@ MonoBehaviour:
         node: {fileID: 3521142943993071811}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142943993071809}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1449,8 +1479,8 @@ MonoBehaviour:
   ports:
     keys:
     - Text
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: Text
       _label: 
@@ -1459,6 +1489,16 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142943993071678}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1472,16 +1512,6 @@ MonoBehaviour:
         node: {fileID: 3521142943993071811}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142943993071678}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1510,10 +1540,7 @@ MonoBehaviour:
       _node: {fileID: 9005973760150918132}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 3521142943993071811}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1573,11 +1600,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -1592,35 +1620,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944026937376}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 2705587765467410957}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944026937376}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944026937376}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -1653,6 +1669,16 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944026937376}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Play
   audioInput:
@@ -1913,10 +1939,7 @@ MonoBehaviour:
       _node: {fileID: 2705587765467410957}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 3521142944026937376}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1993,11 +2016,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -2012,29 +2036,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944241891464}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 787556318022250118}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944241891464}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944241891464}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -2071,6 +2089,16 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944241891464}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   _name: Play 1
   audioInput:
     list: []
@@ -2093,11 +2121,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -2112,26 +2141,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944241891469}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: onEnd
-        node: {fileID: 3521142944241891464}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944241891469}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944241891469}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -2164,6 +2190,19 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944241891469}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: onEnd
+        node: {fileID: 3521142944241891464}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Play 2
   audioInput:
@@ -2265,10 +2304,7 @@ MonoBehaviour:
       _node: {fileID: 787556318022250118}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 3521142944241891464}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -2334,8 +2370,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -2386,27 +2423,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944279065637}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 4741111185216026871}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944279065637}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -2415,6 +2433,29 @@ MonoBehaviour:
         node: {fileID: 3521142944279065635}
         reroutePoints: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944279065637}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944279065637}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 4741111185216026871}
+        reroutePoints: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -2539,8 +2580,8 @@ MonoBehaviour:
     - lerpOutput
     - lerpUp
     - lerpDown
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: Default
       _label: 
@@ -2601,8 +2642,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142944279065635}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Set Default
+      _label: 
       _node: {fileID: 3521142944279065635}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -2611,16 +2662,6 @@ MonoBehaviour:
         node: {fileID: 3521142944279065637}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142944279065635}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -2649,8 +2690,8 @@ MonoBehaviour:
     - audioInput
     - audioOutput
     - pitch
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -2688,6 +2729,16 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142944279065634}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
       _label: 
       _node: {fileID: 3521142944279065634}
@@ -2698,16 +2749,6 @@ MonoBehaviour:
         node: {fileID: 3521142944279065637}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142944279065634}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -3089,11 +3130,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -3108,32 +3150,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944335574292}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 5883263632539263913}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944335574292}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944335574292}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -3166,6 +3199,19 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944335574292}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 5883263632539263913}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Play on this gameObject
   audioInput:
@@ -3392,8 +3438,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -3438,8 +3485,18 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142944335574291}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
       _node: {fileID: 3521142944335574291}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -3448,13 +3505,13 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
+    - _fieldName: FlowInput
+      _label: 
       _node: {fileID: 3521142944335574291}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
-      _direction: 1
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -3696,11 +3753,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -3715,32 +3773,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944337081013}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 4451651985295926468}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944337081013}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944337081013}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -3773,6 +3822,19 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944337081013}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 4451651985295926468}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Play
   audioInput:
@@ -4073,11 +4135,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -4092,23 +4155,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944812499462}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944812499462}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944812499462}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -4150,6 +4213,16 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944812499462}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Curved volume (game only)
   audioInput:
@@ -4397,8 +4470,8 @@ MonoBehaviour:
     - volume
     - audioOutput
     - audioInput
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: volume
       _label: 
@@ -4436,6 +4509,16 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142944812499459}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
       _label: 
       _node: {fileID: 3521142944812499459}
@@ -4446,16 +4529,6 @@ MonoBehaviour:
         node: {fileID: 3521142944812499462}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142944812499459}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -4485,8 +4558,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -4540,32 +4614,36 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142944812499457}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 2854019097164500024}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142944812499457}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142944812499457}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142944812499457}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 2854019097164500024}
+        reroutePoints: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -4593,8 +4671,8 @@ MonoBehaviour:
     - audioInput
     - audioOutput
     - pitch
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -4632,6 +4710,16 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142944812499456}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
       _label: 
       _node: {fileID: 3521142944812499456}
@@ -4642,16 +4730,6 @@ MonoBehaviour:
         node: {fileID: 3521142944812499457}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142944812499456}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -4903,11 +4981,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -4922,32 +5001,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142945012991763}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 8016165419831257129}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142945012991763}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142945012991763}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -4986,6 +5056,19 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142945012991763}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 8016165419831257129}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Play
   audioInput:
@@ -5081,8 +5164,8 @@ MonoBehaviour:
     - audioInput
     - audioOutput
     - pitch
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -5120,6 +5203,16 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142945012991768}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
       _label: 
       _node: {fileID: 3521142945012991768}
@@ -5130,16 +5223,6 @@ MonoBehaviour:
         node: {fileID: 3521142945012991763}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 3521142945012991768}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -5403,11 +5486,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -5422,32 +5506,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142945149681204}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 1522957376}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142945149681204}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142945149681204}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -5480,6 +5555,19 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142945149681204}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1522957376}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Play
   audioInput:
@@ -5632,8 +5720,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -5678,32 +5767,36 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142945208130328}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 6825580364506253366}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142945208130328}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142945208130328}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142945208130328}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 6825580364506253366}
+        reroutePoints: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -6071,11 +6164,12 @@ MonoBehaviour:
   ports:
     keys:
     - audioInput
-    - FlowInput
     - FlowOutput
+    - stop
     - whilePlay
     - onEnd
     - Playing
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -6090,32 +6184,23 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142945209450219}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142945209450219}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142945209450219}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -6148,6 +6233,16 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142945209450219}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   _name: Play
   audioInput:
@@ -6476,8 +6571,8 @@ MonoBehaviour:
   ports:
     keys:
     - WaitSeconds
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: WaitSeconds
       _label: 
@@ -6485,28 +6580,6 @@ MonoBehaviour:
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _label: 
-      _node: {fileID: 3521142945363701098}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -6521,6 +6594,16 @@ MonoBehaviour:
         node: {fileID: 3521142945363701096}
         reroutePoints: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142945363701098}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -6546,8 +6629,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -6592,8 +6676,28 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 3521142945363701096}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142945363701096}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Play
+      _label: 
       _node: {fileID: 3521142945363701096}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -6602,16 +6706,6 @@ MonoBehaviour:
         node: {fileID: 3521142945363701098}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
-      _node: {fileID: 3521142945363701096}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -6823,8 +6917,8 @@ MonoBehaviour:
     - volume
     - audioOutput
     - audioInput
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: volume
       _label: 
@@ -6865,16 +6959,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: 
-      _node: {fileID: 3521142945385355717}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
       _label: 
       _node: {fileID: 3521142945385355717}
@@ -6882,6 +6966,16 @@ MonoBehaviour:
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142945385355717}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -6968,8 +7062,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -7014,32 +7109,36 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Play
-      _node: {fileID: 3521142945385355712}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 4341717829959375052}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
-      _label: On Start
+      _label: 
       _node: {fileID: 3521142945385355712}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 3521142945385355712}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 3521142945385355712}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 4341717829959375052}
+        reroutePoints: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -7169,8 +7268,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -7215,8 +7315,28 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 7569901610952537324}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 7569901610952537324}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Play
+      _label: 
       _node: {fileID: 7569901610952537324}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -7225,16 +7345,6 @@ MonoBehaviour:
         node: {fileID: 5363684279005931473}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
-      _node: {fileID: 7569901610952537324}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -7386,8 +7496,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -7432,8 +7543,28 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 1235032390718609311}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 1235032390718609311}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Play
+      _label: 
       _node: {fileID: 1235032390718609311}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -7442,16 +7573,6 @@ MonoBehaviour:
         node: {fileID: 4790055508633254760}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
-      _node: {fileID: 1235032390718609311}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -7644,8 +7765,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -7690,8 +7812,28 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 6367755807763551464}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 6367755807763551464}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Play
+      _label: 
       _node: {fileID: 6367755807763551464}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -7700,16 +7842,6 @@ MonoBehaviour:
         node: {fileID: 5315546957927100730}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
-      _node: {fileID: 6367755807763551464}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -7791,8 +7923,8 @@ MonoBehaviour:
     - audioInput
     - audioOutput
     - pitch
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -7833,16 +7965,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: 
-      _node: {fileID: 4808768407267580469}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: FlowOutput
       _label: 
       _node: {fileID: 4808768407267580469}
@@ -7850,6 +7972,16 @@ MonoBehaviour:
         PublicKeyToken=null
       connections: []
       _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: 
+      _node: {fileID: 4808768407267580469}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -8055,8 +8187,9 @@ MonoBehaviour:
     - onEnd
     - audioInput
     - Playing
-    - FlowInput
     - FlowOutput
+    - stop
+    - FlowInput
     values:
     - _fieldName: whilePlay
       _label: 
@@ -8113,8 +8246,28 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 1058177822}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 1058177822}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
-      _label: Play
+      _label: 
       _node: {fileID: 1058177822}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -8123,16 +8276,6 @@ MonoBehaviour:
         node: {fileID: 1058177823}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: On Start
-      _node: {fileID: 1058177822}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -8257,8 +8400,8 @@ MonoBehaviour:
     - audioInput
     - audioOutput
     - volume
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: audioInput
       _label: 
@@ -8296,6 +8439,16 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 1058177825}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
       _label: 
       _node: {fileID: 1058177825}
@@ -8306,16 +8459,6 @@ MonoBehaviour:
         node: {fileID: 1058177822}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 1058177825}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -8698,8 +8841,8 @@ MonoBehaviour:
   ports:
     keys:
     - Text
-    - FlowInput
     - FlowOutput
+    - FlowInput
     values:
     - _fieldName: Text
       _label: 
@@ -8714,6 +8857,16 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: 
+      _node: {fileID: 7169145598662675082}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: FlowInput
       _label: 
       _node: {fileID: 7169145598662675082}
@@ -8724,16 +8877,6 @@ MonoBehaviour:
         node: {fileID: 1058177823}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: 
-      _node: {fileID: 7169145598662675082}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -8938,6 +9081,18 @@ PrefabInstance:
     - target: {fileID: 1306345734873399313, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
       propertyPath: m_Name
       value: Named parameters
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393453470214050724, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
+      propertyPath: ports.keys.Array.data[4]
+      value: FlowOutput
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393453470214050724, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
+      propertyPath: ports.values.Array.data[4]._direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393453470214050724, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
+      propertyPath: ports.values.Array.data[4]._fieldName
+      value: FlowOutput
       objectReference: {fileID: 0}
     - target: {fileID: 6217481570174360153, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
       propertyPath: m_RootOrder
