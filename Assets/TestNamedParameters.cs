@@ -35,7 +35,7 @@ public class TestNamedParameters : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sound.UpdateParameters(new Dictionary<string, object>
+        sound.UpdateInputParameters(new Dictionary<string, object>
         {
             { nameof(volume), volume },
             { nameof(pitch),  pitch },

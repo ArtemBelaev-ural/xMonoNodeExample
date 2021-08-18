@@ -27,7 +27,7 @@ public class TimeTest : MonoBehaviour
             return;
         }
 
-        graph.UpdateParameters(new Dictionary<string, object>()
+        graph.UpdateInputParameters(new Dictionary<string, object>()
         {
             { nameof(WaitUntil), WaitUntil },
             { nameof(WaitWhile), WaitWhile },

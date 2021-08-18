@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 869681668}
   - component: {fileID: 1298547259}
   - component: {fileID: 1298547269}
+  - component: {fileID: 1298547257}
   m_Layer: 0
   m_Name: Physics material
   m_TagString: Untagged
@@ -392,6 +393,7 @@ MonoBehaviour:
   - {fileID: 869681668}
   - {fileID: 1298547259}
   - {fileID: 1298547269}
+  - {fileID: 1298547257}
 --- !u!114 &869681659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,6 +525,9 @@ MonoBehaviour:
       connections:
       - fieldName: 
         node: {fileID: 0}
+        reroutePoints: []
+      - fieldName: Case 1
+        node: {fileID: 869681664}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -741,7 +746,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 1298547259}
+        node: {fileID: 869681663}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -946,6 +951,9 @@ MonoBehaviour:
       - fieldName: 
         node: {fileID: 0}
         reroutePoints: []
+      - fieldName: Case 0
+        node: {fileID: 869681664}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1071,6 +1079,36 @@ MonoBehaviour:
   _name: 'Variable: PhysicMaterial'
   inputValue: {fileID: 13400000, guid: e9cdf290fbb7e8f45974d12dcc39916a, type: 2}
   output: {fileID: 0}
+--- !u!114 &1298547257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256208615773902893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e398ed914cceb354d95721c503c6b967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8054587013294531522}
+  position: {x: 88, y: 312}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _label: 
+      _node: {fileID: 1298547257}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: 'Output: Vector3'
+  input: {x: 0, y: 0, z: 0}
 --- !u!1 &2387894229055485632
 GameObject:
   m_ObjectHideFlags: 0
