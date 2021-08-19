@@ -6458,6 +6458,20 @@ GameObject:
   - component: {fileID: 3521142945208130326}
   - component: {fileID: 3521142945208130333}
   - component: {fileID: 6825580364506253366}
+  - component: {fileID: 917419982}
+  - component: {fileID: 917419981}
+  - component: {fileID: 917419980}
+  - component: {fileID: 917419979}
+  - component: {fileID: 917419978}
+  - component: {fileID: 917419977}
+  - component: {fileID: 917419975}
+  - component: {fileID: 917419974}
+  - component: {fileID: 917419973}
+  - component: {fileID: 917419972}
+  - component: {fileID: 917419971}
+  - component: {fileID: 917419970}
+  - component: {fileID: 917419969}
+  - component: {fileID: 917419968}
   m_Layer: 0
   m_Name: Probability
   m_TagString: Untagged
@@ -6499,6 +6513,20 @@ MonoBehaviour:
   - {fileID: 3521142945208130326}
   - {fileID: 3521142945208130333}
   - {fileID: 6825580364506253366}
+  - {fileID: 917419982}
+  - {fileID: 917419981}
+  - {fileID: 917419980}
+  - {fileID: 917419979}
+  - {fileID: 917419978}
+  - {fileID: 917419977}
+  - {fileID: 917419975}
+  - {fileID: 917419974}
+  - {fileID: 917419973}
+  - {fileID: 917419972}
+  - {fileID: 917419971}
+  - {fileID: 917419970}
+  - {fileID: 917419969}
+  - {fileID: 917419968}
 --- !u!114 &3521142945208130328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6512,7 +6540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142945208130329}
-  position: {x: 200, y: -24}
+  position: {x: 200, y: -120}
   ports:
     keys:
     - whilePlay
@@ -6617,7 +6645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142945208130329}
-  position: {x: -552, y: -120}
+  position: {x: -552, y: -104}
   ports:
     keys:
     - audioOutput
@@ -6910,6 +6938,935 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: Execute Event
+--- !u!114 &917419982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b81ad4530880b842a7532833e95ba0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -104, y: 376}
+  ports:
+    keys:
+    - probability
+    - Else
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: probability
+      _label: 
+      _node: {fileID: 917419982}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Else
+      _label: No
+      _node: {fileID: 917419982}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 917419977}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 917419982}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 917419980}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Yes
+      _node: {fileID: 917419982}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 917419979}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Probability
+  probability: 0.2
+--- !u!114 &917419981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -312, y: 264}
+  ports:
+    keys:
+    - audioOutput
+    values:
+    - _fieldName: audioOutput
+      _label: 
+      _node: {fileID: 917419981}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 917419979}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _name: Audio Source
+  soundId: 42
+  audioOutput:
+    list:
+    - {fileID: 0}
+--- !u!114 &917419980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96e2d97e3ec332428a31a507eef577d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -328, y: 376}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _label: Press
+      _node: {fileID: 917419980}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 917419982}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Button
+  buttonText: Press
+--- !u!114 &917419979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: 152, y: 280}
+  ports:
+    keys:
+    - whilePlay
+    - stop
+    - onEnd
+    - audioInput
+    - Playing
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 917419979}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 917419979}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 917419979}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 917419979}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 917419981}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 917419979}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 917419979}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 917419982}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 917419979}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Play
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &917419978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -328, y: 488}
+  ports:
+    keys:
+    - audioOutput
+    values:
+    - _fieldName: audioOutput
+      _label: 
+      _node: {fileID: 917419978}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 917419977}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _name: Audio Source
+  soundId: 45
+  audioOutput:
+    list:
+    - {fileID: 0}
+--- !u!114 &917419977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: 152, y: 456}
+  ports:
+    keys:
+    - whilePlay
+    - stop
+    - onEnd
+    - audioInput
+    - Playing
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 917419977}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 917419977}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 917419977}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 917419977}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 917419978}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 917419977}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 917419977}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Else
+        node: {fileID: 917419982}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 917419977}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Play
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &917419975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: 136, y: 648}
+  ports:
+    keys:
+    - audioOutput
+    values:
+    - _fieldName: audioOutput
+      _label: 
+      _node: {fileID: 917419975}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 917419974}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _name: Audio Source
+  soundId: 51
+  audioOutput:
+    list:
+    - {fileID: 0}
+--- !u!114 &917419974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -40, y: 648}
+  ports:
+    keys:
+    - whilePlay
+    - stop
+    - onEnd
+    - audioInput
+    - Playing
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 917419974}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 917419974}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 917419974}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 917419974}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 917419975}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 917419974}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 917419974}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutputWeights 0
+        node: {fileID: 917419969}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 917419974}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Play
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &917419973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -40, y: 808}
+  ports:
+    keys:
+    - whilePlay
+    - stop
+    - onEnd
+    - audioInput
+    - Playing
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 917419973}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 917419973}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 917419973}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 917419973}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 917419972}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 917419973}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 917419973}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutputWeights 1
+        node: {fileID: 917419969}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 917419973}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Play
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &917419972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: 136, y: 808}
+  ports:
+    keys:
+    - audioOutput
+    values:
+    - _fieldName: audioOutput
+      _label: 
+      _node: {fileID: 917419972}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 917419973}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _name: Audio Source
+  soundId: 51
+  audioOutput:
+    list:
+    - {fileID: 0}
+--- !u!114 &917419971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -40, y: 936}
+  ports:
+    keys:
+    - whilePlay
+    - stop
+    - onEnd
+    - audioInput
+    - Playing
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 917419971}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 917419971}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 917419971}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 917419971}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 917419970}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 917419971}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 917419971}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutputWeights 2
+        node: {fileID: 917419969}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 917419971}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Play
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &917419970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: 136, y: 936}
+  ports:
+    keys:
+    - audioOutput
+    values:
+    - _fieldName: audioOutput
+      _label: 
+      _node: {fileID: 917419970}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 917419971}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _name: Audio Source
+  soundId: 51
+  audioOutput:
+    list:
+    - {fileID: 0}
+--- !u!114 &917419969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68623bd7ca99def438dceba8cfefb01e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -344, y: 792}
+  ports:
+    keys:
+    - FlowInput
+    - FlowOutputWeights
+    - FlowOutputWeights 0
+    - FlowOutputWeights 1
+    - FlowOutputWeights 2
+    values:
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 917419969}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 917419968}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutputWeights
+      _label: 
+      _node: {fileID: 917419969}
+      _typeQualifiedName: System.Int32[], mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutputWeights 0
+      _label: 
+      _node: {fileID: 917419969}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 917419974}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: FlowOutputWeights 1
+      _label: 
+      _node: {fileID: 917419969}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 917419973}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: FlowOutputWeights 2
+      _label: 
+      _node: {fileID: 917419969}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 917419971}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  _name: Random Branch
+  FlowOutputWeights: 0a0000000200000001000000
+--- !u!114 &917419968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521142945208130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96e2d97e3ec332428a31a507eef577d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3521142945208130329}
+  position: {x: -520, y: 792}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _label: Press
+      _node: {fileID: 917419968}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 917419969}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Button
+  buttonText: Press
 --- !u!1 &3521142945209450224
 GameObject:
   m_ObjectHideFlags: 0
@@ -9973,6 +10930,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
+--- !u!4 &5135404497673961697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6217481570174360153, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
+  m_PrefabInstance: {fileID: 1228481753963502264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8526098140954422761 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7448593914765768529, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
@@ -9995,8 +10957,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0351f5f65c3ffe44d9cc3c648fe52292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &5135404497673961697 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6217481570174360153, guid: 012deb49a81a039408d43ab426fd8673, type: 3}
-  m_PrefabInstance: {fileID: 1228481753963502264}
-  m_PrefabAsset: {fileID: 0}

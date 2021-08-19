@@ -877,21 +877,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: input
-      value: 0
+    - target: {fileID: 917419970, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: output
-      value: 0
+    - target: {fileID: 917419972, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: clamped01
-      value: 0
+    - target: {fileID: 917419975, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: easingMode
-      value: 10
+    - target: {fileID: 917419978, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 917419981, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
@@ -940,6 +944,18 @@ PrefabInstance:
     - target: {fileID: 3521142944315417221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142945208130330, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142945208130331, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142945208130333, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: output.list.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
@@ -1108,7 +1124,6 @@ GameObject:
   - component: {fileID: 1001768306}
   - component: {fileID: 1001768311}
   - component: {fileID: 1001768313}
-  - component: {fileID: 1001768312}
   m_Layer: 0
   m_Name: Time test
   m_TagString: Untagged
@@ -1226,7 +1241,6 @@ MonoBehaviour:
   - {fileID: 1001768306}
   - {fileID: 1001768311}
   - {fileID: 1001768313}
-  - {fileID: 1001768312}
 --- !u!114 &1001768287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2513,69 +2527,6 @@ MonoBehaviour:
   elapsedPercent: 0
   remaining: 0
   remainingPercent: 0
---- !u!114 &1001768312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001768283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2231c8872ca6840814173ecf7c4792, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1001768286}
-  position: {x: -360, y: 120}
-  ports:
-    keys:
-    - condition
-    - Else
-    - FlowInput
-    - FlowOutput
-    values:
-    - _fieldName: condition
-      _label: 
-      _node: {fileID: 1001768312}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Else
-      _label: else
-      _node: {fileID: 1001768312}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Enter
-      _node: {fileID: 1001768312}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: if (condition)
-      _node: {fileID: 1001768312}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: If
-  condition: 0
 --- !u!114 &1001768313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6874,7 +6825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":null,"label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-256.0,"y":105.0},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"Equals","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.Vector3","targetTypeName":"UnityEngine.Vector3","$version":"A"},"defaultValues":{"target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%other":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":76.0,"y":346.0},"guid":"566344d9-06f9-4fd8-a9e7-8ea5c96cdefa","$version":"A","$type":"Unity.VisualScripting.InvokeMember"},{"member":{"name":"deltaTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-415.0,"y":405.0},"guid":"958c2058-9df7-452b-bdc2-4207e975663c","$version":"A","$type":"Unity.VisualScripting.GetMember"},{"member":{"name":"fixedTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-204.0,"y":401.0},"guid":"cc544974-e374-4580-bd83-10132566e15d","$version":"A","$type":"Unity.VisualScripting.GetMember"},{"member":{"name":"enabled","parameterTypes":null,"targetType":"SoundGetterTest","targetTypeName":"SoundGetterTest","$version":"A"},"defaultValues":{"target":null},"position":{"x":-157.0,"y":166.0},"guid":"276130fc-ee5d-42f0-9f13-bb9f650140f1","$version":"A","$type":"Unity.VisualScripting.GetMember"}],"$version":"A"}}}'
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":null,"label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-256.0,"y":105.0},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"Equals","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.Vector3","targetTypeName":"UnityEngine.Vector3","$version":"A"},"defaultValues":{"target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%other":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":76.0,"y":346.0},"guid":"566344d9-06f9-4fd8-a9e7-8ea5c96cdefa","$version":"A","$type":"Unity.VisualScripting.InvokeMember"},{"member":{"name":"deltaTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-415.0,"y":405.0},"guid":"958c2058-9df7-452b-bdc2-4207e975663c","$version":"A","$type":"Unity.VisualScripting.GetMember"},{"member":{"name":"fixedTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-204.0,"y":401.0},"guid":"cc544974-e374-4580-bd83-10132566e15d","$version":"A","$type":"Unity.VisualScripting.GetMember"},{"member":{"name":"enabled","parameterTypes":null,"targetType":"SoundGetterTest","targetTypeName":"SoundGetterTest","$version":"A"},"defaultValues":{"target":null},"position":{"x":-157.0,"y":166.0},"guid":"276130fc-ee5d-42f0-9f13-bb9f650140f1","$version":"A","$type":"Unity.VisualScripting.GetMember"},{"defaultValues":{},"position":{"x":-377.0,"y":72.0},"guid":"e53b9288-a654-4776-a988-51c2604f7a2a","$version":"A","$type":"Unity.VisualScripting.SelectUnit"}],"$version":"A"}}}'
     _objectReferences: []
 --- !u!114 &2095462987
 MonoBehaviour:
