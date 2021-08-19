@@ -877,6 +877,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: input
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: output
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: clamped01
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869681664, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: easingMode
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
       value: Test XSoundGraph
@@ -2903,6 +2919,7 @@ MonoBehaviour:
   - {fileID: 1004178137}
   - {fileID: 1004178136}
   - {fileID: 1004178134}
+  - {fileID: 1004178135}
   - {fileID: 1004178147}
   - {fileID: 1004178146}
   - {fileID: 1004178145}

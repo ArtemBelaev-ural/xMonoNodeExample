@@ -5427,10 +5427,10 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: Float Ease
-  input: 0.013712219
-  output: 0.013712219
+  input: 0
+  output: 0
   clamped01: 1
-  easingMode: 1
+  easingMode: 10
 --- !u!114 &5526692625386971086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5490,7 +5490,7 @@ MonoBehaviour:
   _name: Get Time
   audioInput:
     list: []
-  time: 0.013712219
+  time: 0
   normalized: 1
 --- !u!114 &869681665
 MonoBehaviour:
@@ -5602,8 +5602,7 @@ MonoBehaviour:
   audioInput:
     list: []
   Playing:
-    list:
-    - {fileID: 0}
+    list: []
 --- !u!114 &3977479546904525837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5690,7 +5689,7 @@ MonoBehaviour:
     list: []
   audioOutput:
     list: []
-  volume: 0.013712219
+  volume: 0
 --- !u!1 &3521142945012991770
 GameObject:
   m_ObjectHideFlags: 0
