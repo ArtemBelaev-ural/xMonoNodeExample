@@ -191,7 +191,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: audioInput
-      _label: 
+      _label: Input
       _node: {fileID: 51869664}
       _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -433,7 +433,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: audioInput
-      _label: 
+      _label: Input
       _node: {fileID: 51869670}
       _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -877,22 +877,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 325987651, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 869681659, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 869681661, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1636968947037902408, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
       value: Test XSoundGraph
@@ -940,14 +924,6 @@ PrefabInstance:
     - target: {fileID: 3521142944315417221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945149681206, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945363701102, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
@@ -1115,6 +1091,8 @@ GameObject:
   - component: {fileID: 1001768310}
   - component: {fileID: 1001768306}
   - component: {fileID: 1001768311}
+  - component: {fileID: 1001768313}
+  - component: {fileID: 1001768312}
   m_Layer: 0
   m_Name: Time test
   m_TagString: Untagged
@@ -1153,7 +1131,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: 
+      _label: Exit
       _node: {fileID: 1001768284}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1163,7 +1141,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: 
+      _label: Enter
       _node: {fileID: 1001768284}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1231,6 +1209,8 @@ MonoBehaviour:
   - {fileID: 1001768300}
   - {fileID: 1001768306}
   - {fileID: 1001768311}
+  - {fileID: 1001768313}
+  - {fileID: 1001768312}
 --- !u!114 &1001768287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,7 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
-  position: {x: 88, y: -344}
+  position: {x: 104, y: -328}
   ports:
     keys:
     - Text
@@ -1320,7 +1300,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: 
+      _label: Exit
       _node: {fileID: 1001768289}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1330,7 +1310,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: 
+      _label: Enter
       _node: {fileID: 1001768289}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1531,7 +1511,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: 
+      _label: Exit
       _node: {fileID: 1001768293}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1541,7 +1521,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: 
+      _label: Enter
       _node: {fileID: 1001768293}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1620,7 +1600,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: 
+      _label: Exit
       _node: {fileID: 1001768295}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1630,7 +1610,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: 
+      _label: Enter
       _node: {fileID: 1001768295}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -1657,7 +1637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
-  position: {x: -88, y: -184}
+  position: {x: -72, y: -200}
   ports:
     keys:
     - flow
@@ -1786,7 +1766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
-  position: {x: -296, y: -152}
+  position: {x: -296, y: -168}
   ports:
     keys:
     - condition
@@ -2065,7 +2045,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: 
+      _label: Exit
       _node: {fileID: 1001768304}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -2075,7 +2055,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: 
+      _label: Enter
       _node: {fileID: 1001768304}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -2123,7 +2103,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: 
+      _label: Exit
       _node: {fileID: 1001768305}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -2133,7 +2113,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: 
+      _label: Enter
       _node: {fileID: 1001768305}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -2277,7 +2257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
-  position: {x: -104, y: 8}
+  position: {x: -72, y: -40}
   ports:
     keys:
     - FlowOutput
@@ -2433,7 +2413,10 @@ MonoBehaviour:
       _node: {fileID: 1001768311}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1001768313}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -2514,6 +2497,124 @@ MonoBehaviour:
   elapsedPercent: 0
   remaining: 0
   remainingPercent: 0
+--- !u!114 &1001768312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001768283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2231c8872ca6840814173ecf7c4792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1001768286}
+  position: {x: -360, y: 120}
+  ports:
+    keys:
+    - condition
+    - Else
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: condition
+      _label: 
+      _node: {fileID: 1001768312}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Else
+      _label: else
+      _node: {fileID: 1001768312}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 1001768312}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: if (condition)
+      _node: {fileID: 1001768312}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: If
+  condition: 0
+--- !u!114 &1001768313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001768283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542da5e0df5d9e545b590dfd20f13290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1001768286}
+  position: {x: 344, y: -888}
+  ports:
+    keys:
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Text
+      _label: 
+      _node: {fileID: 1001768313}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 1001768313}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: started
+        node: {fileID: 1001768311}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 1001768313}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Log
+  Text: 
 --- !u!1 &1004178123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,7 +2903,6 @@ MonoBehaviour:
   - {fileID: 1004178137}
   - {fileID: 1004178136}
   - {fileID: 1004178134}
-  - {fileID: 1004178135}
   - {fileID: 1004178147}
   - {fileID: 1004178146}
   - {fileID: 1004178145}
@@ -3083,7 +3183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
-  position: {x: 0, y: 0}
+  position: {x: 104, y: -8}
   ports:
     keys:
     - a
@@ -3479,7 +3579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
-  position: {x: 88, y: -24}
+  position: {x: 296, y: -24}
   ports:
     keys:
     - a
@@ -4145,7 +4245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
-  position: {x: -440, y: -24}
+  position: {x: -440, y: -40}
   ports:
     keys:
     - FlowOutput
@@ -4191,7 +4291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
-  position: {x: -440, y: 8}
+  position: {x: -440, y: 24}
   ports:
     keys:
     - FlowOutput
@@ -4521,7 +4621,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  _name: C
+  _name: float
   input: 132
 --- !u!114 &1158217443
 MonoBehaviour:
@@ -4556,7 +4656,7 @@ MonoBehaviour:
     - FlowOutput
     values:
     - _fieldName: FlowInput
-      _label: 
+      _label: Enter
       _node: {fileID: 1158217444}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -4572,7 +4672,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: 
+      _label: Exit
       _node: {fileID: 1158217444}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
