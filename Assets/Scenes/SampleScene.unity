@@ -877,17 +877,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 917419970, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
+    - target: {fileID: 869681661, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: ports.values.Array.data[2].connections.Array.size
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 917419972, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 917419975, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
+    - target: {fileID: 1335313989, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: ports.values.Array.data[2].connections.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
@@ -936,42 +932,6 @@ PrefabInstance:
     - target: {fileID: 3521142944315417221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081014, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081015, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081016, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: output.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081016, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: output.list.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081016, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: output.list.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081017, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: audioOutput.list.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450222, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: output.list.Array.data[0]
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
@@ -2886,7 +2846,6 @@ MonoBehaviour:
   - {fileID: 1004178137}
   - {fileID: 1004178136}
   - {fileID: 1004178134}
-  - {fileID: 1004178135}
   - {fileID: 1004178147}
   - {fileID: 1004178146}
   - {fileID: 1004178145}
@@ -3167,7 +3126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
-  position: {x: 104, y: -8}
+  position: {x: 0, y: 0}
   ports:
     keys:
     - a
