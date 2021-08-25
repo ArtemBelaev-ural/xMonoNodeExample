@@ -8,13 +8,8 @@ public class CameraSystem : MonoBehaviour
     private Transform rotator = null;
 
     [SerializeField]
-    private Transform camera = null;
+    private Transform _camera = null;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -26,8 +21,8 @@ public class CameraSystem : MonoBehaviour
         }
         if (Input.GetMouseButton(1))
         {
-            camera.Rotate(Vector3.up * Input.GetAxis("Mouse X") * 5, Space.World);
-            camera.Rotate(Vector3.left * Input.GetAxis("Mouse Y") * 5, Space.Self);
+            _camera.Rotate(Vector3.up * Input.GetAxis("Mouse X") * 5, Space.World);
+            _camera.Rotate(Vector3.left * Input.GetAxis("Mouse Y") * 5, Space.Self);
         }
         
     }
