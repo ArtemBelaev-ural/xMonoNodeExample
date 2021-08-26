@@ -16,15 +16,15 @@ GameObject:
   - component: {fileID: 3055716343152795555}
   - component: {fileID: 3055716343152795561}
   - component: {fileID: 3055716343152795563}
-  - component: {fileID: 3055716343152795564}
   - component: {fileID: 2021904579}
   - component: {fileID: 2021904580}
   - component: {fileID: 2021904581}
   - component: {fileID: 2021904587}
   - component: {fileID: 337970732}
   - component: {fileID: 3898522764661776694}
+  - component: {fileID: 5925184839532680350}
   m_Layer: 5
-  m_Name: Animation
+  m_Name: animation1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,13 +68,13 @@ MonoBehaviour:
   - {fileID: 3055716343152795555}
   - {fileID: 3055716343152795561}
   - {fileID: 3055716343152795563}
-  - {fileID: 3055716343152795564}
   - {fileID: 2021904579}
   - {fileID: 2021904580}
   - {fileID: 2021904581}
   - {fileID: 2021904587}
   - {fileID: 337970732}
   - {fileID: 3898522764661776694}
+  - {fileID: 5925184839532680350}
 --- !u!114 &3055716343152795559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,8 +378,8 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.UI.Graphic, UnityEngine.UI, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: image
-        node: {fileID: 3055716343152795564}
+      - fieldName: component
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -487,10 +487,10 @@ MonoBehaviour:
         node: {fileID: 3055716343152795563}
         reroutePoints: []
       - fieldName: _transform
-        node: {fileID: 3055716343152795564}
-        reroutePoints: []
-      - fieldName: _transform
         node: {fileID: 2021904579}
+        reroutePoints: []
+      - fieldName: obj
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -555,57 +555,6 @@ MonoBehaviour:
   _name: Get RectTransform
   _transform: {fileID: 0}
   rectTransform: {fileID: 0}
---- !u!114 &3055716343152795564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3055716343152795566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19e9e25b692aafb4fa2f634861fdcc3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 3055716343152795560}
-  position: {x: 8, y: 280}
-  ports:
-    keys:
-    - _transform
-    - image
-    values:
-    - _fieldName: _transform
-      _label: 
-      _node: {fileID: 3055716343152795564}
-      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: parent
-        node: {fileID: 3055716343152795561}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: image
-      _label: 
-      _node: {fileID: 3055716343152795564}
-      _typeQualifiedName: UnityEngine.UI.Image, UnityEngine.UI, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: target
-        node: {fileID: 3055716343152795555}
-        reroutePoints: []
-      - fieldName: value
-        node: {fileID: 337970732}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: Get Image
-  _transform: {fileID: 0}
-  image: {fileID: 0}
 --- !u!114 &2021904579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,8 +934,8 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: image
-        node: {fileID: 3055716343152795564}
+      - fieldName: component
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1136,3 +1085,54 @@ MonoBehaviour:
       _dynamic: 1
   _name: Join
   waitAll: []
+--- !u!114 &5925184839532680350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e096058349c0752488e1e1ccc75c0131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  position: {x: 9, y: 285}
+  ports:
+    keys:
+    - obj
+    - component
+    values:
+    - _fieldName: obj
+      _label: Transform
+      _node: {fileID: 5925184839532680350}
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: 3055716343152795561}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: component
+      _label: Graphic
+      _node: {fileID: 5925184839532680350}
+      _typeQualifiedName: UnityEngine.UI.Graphic, UnityEngine.UI, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: value
+        node: {fileID: 337970732}
+        reroutePoints: []
+      - fieldName: target
+        node: {fileID: 3055716343152795555}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Graphic Component
+  obj: {fileID: 0}
+  component: {fileID: 0}
