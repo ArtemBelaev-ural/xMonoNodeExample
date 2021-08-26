@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using XMonoNode;
+using TMPro;
 
 public class TimeTest : MonoBehaviour
 {

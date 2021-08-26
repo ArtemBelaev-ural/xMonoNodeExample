@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 2021904580}
   - component: {fileID: 2021904581}
   - component: {fileID: 2021904587}
-  - component: {fileID: 5210991058710301948}
+  - component: {fileID: 337970732}
+  - component: {fileID: 3898522764661776694}
   m_Layer: 5
   m_Name: Animation
   m_TagString: Untagged
@@ -72,7 +73,8 @@ MonoBehaviour:
   - {fileID: 2021904580}
   - {fileID: 2021904581}
   - {fileID: 2021904587}
-  - {fileID: 5210991058710301948}
+  - {fileID: 337970732}
+  - {fileID: 3898522764661776694}
 --- !u!114 &3055716343152795559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +106,7 @@ MonoBehaviour:
         node: {fileID: 2021904587}
         reroutePoints: []
       - fieldName: FlowInput
-        node: {fileID: 5210991058710301948}
+        node: {fileID: 3898522764661776694}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -195,7 +197,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: waitAll 1
-        node: {fileID: 5210991058710301948}
+        node: {fileID: 3898522764661776694}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -313,7 +315,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: waitAll 0
-        node: {fileID: 5210991058710301948}
+        node: {fileID: 3898522764661776694}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -373,7 +375,7 @@ MonoBehaviour:
     - _fieldName: target
       _label: 
       _node: {fileID: 3055716343152795555}
-      _typeQualifiedName: UnityEngine.UI.Image, UnityEngine.UI, Version=1.0.0.0,
+      _typeQualifiedName: UnityEngine.UI.Graphic, UnityEngine.UI, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: image
@@ -430,7 +432,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: waitAll 2
-        node: {fileID: 5210991058710301948}
+        node: {fileID: 3898522764661776694}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -442,14 +444,8 @@ MonoBehaviour:
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: FlowOutput
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: FlowOutput
-        node: {fileID: 2021904587}
+      - fieldName: notNull
+        node: {fileID: 337970732}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -599,6 +595,9 @@ MonoBehaviour:
       connections:
       - fieldName: target
         node: {fileID: 3055716343152795555}
+        reroutePoints: []
+      - fieldName: value
+        node: {fileID: 337970732}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -825,7 +824,10 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: FlowOutput
-        node: {fileID: 5210991058710301948}
+        node: {fileID: 0}
+        reroutePoints: []
+      - fieldName: FlowOutput
+        node: {fileID: 3898522764661776694}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -929,7 +931,7 @@ MonoBehaviour:
         node: {fileID: 3055716343152795557}
         reroutePoints: []
       - fieldName: FlowInput
-        node: {fileID: 3055716343152795555}
+        node: {fileID: 337970732}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -956,7 +958,82 @@ MonoBehaviour:
   easingMode: 28
   target: {fileID: 0}
   targetValue: {x: 0, y: 0, z: 0}
---- !u!114 &5210991058710301948
+--- !u!114 &337970732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cadb2a3c43ee04481e566e4121043e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  position: {x: 280, y: 280}
+  ports:
+    keys:
+    - value
+    - notNull
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: value
+      _label: 
+      _node: {fileID: 337970732}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: image
+        node: {fileID: 3055716343152795564}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: notNull
+      _label: 
+      _node: {fileID: 337970732}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 3055716343152795555}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Null
+      _node: {fileID: 337970732}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: waitAll 2
+        node: {fileID: 3898522764661776694}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 337970732}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 2021904587}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: If Null
+  value: {fileID: 0}
+--- !u!114 &3898522764661776694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -974,14 +1051,14 @@ MonoBehaviour:
     keys:
     - waitAll
     - FlowOutput
+    - FlowInput
     - waitAll 0
     - waitAll 1
     - waitAll 2
-    - FlowInput
     values:
     - _fieldName: waitAll
       _label: 
-      _node: {fileID: 5210991058710301948}
+      _node: {fileID: 3898522764661776694}
       _typeQualifiedName: XMonoNode.Flow[], FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
@@ -991,7 +1068,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: FlowOutput
       _label: Exit
-      _node: {fileID: 5210991058710301948}
+      _node: {fileID: 3898522764661776694}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
@@ -1002,9 +1079,22 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Reset
+      _node: {fileID: 3898522764661776694}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 3055716343152795559}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: waitAll 0
       _label: 
-      _node: {fileID: 5210991058710301948}
+      _node: {fileID: 3898522764661776694}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
@@ -1017,7 +1107,7 @@ MonoBehaviour:
       _dynamic: 1
     - _fieldName: waitAll 1
       _label: 
-      _node: {fileID: 5210991058710301948}
+      _node: {fileID: 3898522764661776694}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
@@ -1030,10 +1120,13 @@ MonoBehaviour:
       _dynamic: 1
     - _fieldName: waitAll 2
       _label: 
-      _node: {fileID: 5210991058710301948}
+      _node: {fileID: 3898522764661776694}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
+      - fieldName: FlowOutput
+        node: {fileID: 337970732}
+        reroutePoints: []
       - fieldName: FlowOutput
         node: {fileID: 3055716343152795555}
         reroutePoints: []
@@ -1041,18 +1134,5 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-    - _fieldName: FlowInput
-      _label: Reset
-      _node: {fileID: 5210991058710301948}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 3055716343152795559}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
   _name: Join
   waitAll: []
