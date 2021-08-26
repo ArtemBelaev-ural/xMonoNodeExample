@@ -1467,6 +1467,20 @@ Transform:
   m_Father: {fileID: 1236209499}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!115 &899810973
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: Vector34Normalized
+  m_Namespace: XMonoNode
 --- !u!115 &935116613
 MonoScript:
   m_ObjectHideFlags: 0
@@ -6821,6 +6835,28 @@ GameObject:
   - component: {fileID: 1993175353}
   - component: {fileID: 1993175355}
   - component: {fileID: 1993175354}
+  - component: {fileID: 1993175359}
+  - component: {fileID: 1993175358}
+  - component: {fileID: 1993175357}
+  - component: {fileID: 1993175356}
+  - component: {fileID: 1993175363}
+  - component: {fileID: 1993175362}
+  - component: {fileID: 1993175361}
+  - component: {fileID: 1993175360}
+  - component: {fileID: 1993175377}
+  - component: {fileID: 1993175376}
+  - component: {fileID: 1993175375}
+  - component: {fileID: 1993175374}
+  - component: {fileID: 1993175373}
+  - component: {fileID: 1993175372}
+  - component: {fileID: 1993175371}
+  - component: {fileID: 1993175370}
+  - component: {fileID: 1993175369}
+  - component: {fileID: 1993175368}
+  - component: {fileID: 1993175367}
+  - component: {fileID: 1993175366}
+  - component: {fileID: 1993175365}
+  - component: {fileID: 1993175364}
   m_Layer: 0
   m_Name: Vectors test
   m_TagString: Untagged
@@ -7387,7 +7423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -280, y: 2200}
+  position: {x: -264, y: 3256}
   ports:
     keys:
     - vector4
@@ -7501,6 +7537,28 @@ MonoBehaviour:
   - {fileID: 1993175353}
   - {fileID: 1993175355}
   - {fileID: 1993175354}
+  - {fileID: 1993175359}
+  - {fileID: 1993175358}
+  - {fileID: 1993175357}
+  - {fileID: 1993175356}
+  - {fileID: 1993175363}
+  - {fileID: 1993175362}
+  - {fileID: 1993175361}
+  - {fileID: 1993175360}
+  - {fileID: 1993175377}
+  - {fileID: 1993175376}
+  - {fileID: 1993175375}
+  - {fileID: 1993175374}
+  - {fileID: 1993175373}
+  - {fileID: 1993175372}
+  - {fileID: 1993175371}
+  - {fileID: 1993175370}
+  - {fileID: 1993175369}
+  - {fileID: 1993175368}
+  - {fileID: 1993175367}
+  - {fileID: 1993175366}
+  - {fileID: 1993175365}
+  - {fileID: 1993175364}
 --- !u!114 &1993175296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8055,7 +8113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: 152, y: 264}
+  position: {x: 136, y: 264}
   ports:
     keys:
     - a
@@ -8121,7 +8179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -72, y: 264}
+  position: {x: -88, y: 264}
   ports:
     keys:
     - a
@@ -8163,7 +8221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -296, y: 264}
+  position: {x: -312, y: 264}
   ports:
     keys:
     - a
@@ -8205,7 +8263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -520, y: 264}
+  position: {x: -536, y: 264}
   ports:
     keys:
     - a
@@ -8247,7 +8305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: 152, y: 408}
+  position: {x: 136, y: 408}
   ports:
     keys:
     - a
@@ -8313,7 +8371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -72, y: 408}
+  position: {x: -88, y: 408}
   ports:
     keys:
     - a
@@ -8379,7 +8437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -296, y: 408}
+  position: {x: -312, y: 408}
   ports:
     keys:
     - a
@@ -8445,7 +8503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -520, y: 408}
+  position: {x: -536, y: 408}
   ports:
     keys:
     - a
@@ -8511,7 +8569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -296, y: 600}
+  position: {x: -312, y: 600}
   ports:
     keys:
     - vector
@@ -8565,7 +8623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -520, y: 600}
+  position: {x: -536, y: 600}
   ports:
     keys:
     - vector
@@ -8604,7 +8662,7 @@ MonoBehaviour:
       _dynamic: 0
   _name: Vector 3 Project
   vector: {x: 1, y: 0, z: 0}
-  normal: {x: 1, y: 1, z: 0}
+  normal: {x: 1, y: 1234, z: 0}
   project: {x: 0, y: 0, z: 0}
 --- !u!114 &1993175321
 MonoBehaviour:
@@ -8619,7 +8677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -72, y: 600}
+  position: {x: -88, y: 600}
   ports:
     keys:
     - inDirection
@@ -8947,7 +9005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: 104, y: 1624}
+  position: {x: 88, y: 1624}
   ports:
     keys:
     - right
@@ -8977,7 +9035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -72, y: 1624}
+  position: {x: -88, y: 1624}
   ports:
     keys:
     - left
@@ -9007,7 +9065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -248, y: 1624}
+  position: {x: -264, y: 1624}
   ports:
     keys:
     - down
@@ -9037,7 +9095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: 104, y: 1544}
+  position: {x: 88, y: 1544}
   ports:
     keys:
     - up
@@ -9067,7 +9125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -72, y: 1544}
+  position: {x: -88, y: 1544}
   ports:
     keys:
     - one
@@ -9097,7 +9155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -248, y: 1544}
+  position: {x: -264, y: 1544}
   ports:
     keys:
     - zero
@@ -9964,7 +10022,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: Vector 2 Get X
-  a: {x: 1, y: 2}
+  a: {x: 1234, y: 2}
   x: 0
 --- !u!114 &1993175348
 MonoBehaviour:
@@ -9979,7 +10037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -440, y: 1944}
+  position: {x: -424, y: 3000}
   ports:
     keys:
     - one
@@ -10015,7 +10073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -280, y: 2264}
+  position: {x: -264, y: 3320}
   ports:
     keys:
     - vector4
@@ -10060,7 +10118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -440, y: 2072}
+  position: {x: -424, y: 3128}
   ports:
     keys:
     - one
@@ -10096,7 +10154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -280, y: 2136}
+  position: {x: -264, y: 3192}
   ports:
     keys:
     - vector3
@@ -10141,7 +10199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -440, y: 2200}
+  position: {x: -424, y: 3256}
   ports:
     keys:
     - one
@@ -10177,7 +10235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -280, y: 2008}
+  position: {x: -264, y: 3064}
   ports:
     keys:
     - vector2
@@ -10222,7 +10280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -280, y: 2072}
+  position: {x: -264, y: 3128}
   ports:
     keys:
     - vector3
@@ -10267,7 +10325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
-  position: {x: -280, y: 1944}
+  position: {x: -264, y: 3000}
   ports:
     keys:
     - vector2
@@ -10299,6 +10357,1240 @@ MonoBehaviour:
   _name: Vector 2 To 3
   vector2: {x: 0, y: 0}
   vector3: {x: 0, y: 0, z: 0}
+--- !u!114 &1993175356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b09049eaa2bf745a9675d4c11ae5b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -120, y: 1928}
+  ports:
+    keys:
+    - a
+    - z
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175356}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: z
+      _label: 
+      _node: {fileID: 1993175356}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Get Z
+  a: {x: 1, y: 2, z: 3, w: 1}
+  z: 0
+--- !u!114 &1993175357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d00073ede51d174a8622c82c83ba5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: 40, y: 1928}
+  ports:
+    keys:
+    - a
+    - w
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175357}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: w
+      _label: 
+      _node: {fileID: 1993175357}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Get W
+  a: {x: 1, y: 2, z: 3, w: 1}
+  w: 0
+--- !u!114 &1993175358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdb4b933af9c2443a889f8b66803db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -280, y: 1928}
+  ports:
+    keys:
+    - a
+    - y
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175358}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: y
+      _label: 
+      _node: {fileID: 1993175358}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Get Y
+  a: {x: 1, y: 2, z: 3, w: 1}
+  y: 0
+--- !u!114 &1993175359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31a967ed1d6dac4eba3c27d3ffa35b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -440, y: 1928}
+  ports:
+    keys:
+    - a
+    - x
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175359}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: x
+      _label: 
+      _node: {fileID: 1993175359}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Get X
+  a: {x: 1, y: 2, z: 3, w: 1}
+  x: 0
+--- !u!114 &1993175360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e39298651047b54790789597ef0b358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -120, y: 2168}
+  ports:
+    keys:
+    - a
+    - b
+    - sum
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175360}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 1993175360}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: sum
+      _label: A + B
+      _node: {fileID: 1993175360}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: a
+        node: {fileID: 1993175377}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Sum
+  a: {x: 0, y: 0, z: 0, w: 0}
+  b: {x: 0, y: 0, z: 0, w: 0}
+  sum: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1993175361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac42d7ae6d302544a872f8f0caa20fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -280, y: 2168}
+  ports:
+    keys:
+    - vector4
+    - x
+    - y
+    - z
+    - w
+    - normalized
+    - magnitude
+    values:
+    - _fieldName: vector4
+      _label: 
+      _node: {fileID: 1993175361}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: x
+      _label: 
+      _node: {fileID: 1993175361}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: y
+      _label: 
+      _node: {fileID: 1993175361}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: z
+      _label: 
+      _node: {fileID: 1993175361}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: w
+      _label: 
+      _node: {fileID: 1993175361}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: normalized
+      _label: 
+      _node: {fileID: 1993175361}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: magnitude
+      _label: 
+      _node: {fileID: 1993175361}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Expose
+  vector4: {x: 0, y: 0, z: 0, w: 0}
+  x: 0
+  y: 0
+  z: 0
+  w: 0
+  normalized: {x: 0, y: 0, z: 0, w: 0}
+  magnitude: 0
+--- !u!114 &1993175362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170182ea89aa3b94b8cdec10befc12ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -440, y: 2168}
+  ports:
+    keys:
+    - x
+    - y
+    - z
+    - w
+    - vector4
+    values:
+    - _fieldName: x
+      _label: 
+      _node: {fileID: 1993175362}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: y
+      _label: 
+      _node: {fileID: 1993175362}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: z
+      _label: 
+      _node: {fileID: 1993175362}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: w
+      _label: 
+      _node: {fileID: 1993175362}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: vector4
+      _label: 
+      _node: {fileID: 1993175362}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: b
+        node: {fileID: 1993175377}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Join
+  x: 1234
+  y: 0
+  z: 0
+  w: 0
+  vector4: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1993175363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27efeea14c35a1d41ac36f69c9166d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: 200, y: 1928}
+  ports:
+    keys:
+    - a
+    - x
+    - y
+    - z
+    - w
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175363}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: x
+      _label: 
+      _node: {fileID: 1993175363}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: y
+      _label: 
+      _node: {fileID: 1993175363}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: z
+      _label: 
+      _node: {fileID: 1993175363}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: w
+      _label: 
+      _node: {fileID: 1993175363}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Get XYZW
+  a: {x: 1, y: 2, z: 3, w: 1}
+  x: 0
+  y: 0
+  z: 0
+  w: 0
+--- !u!114 &1993175364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431af22d407479140890dfe354737290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -96.31607, y: 2744.2544}
+  ports:
+    keys:
+    - vector
+    - normal
+    - project
+    values:
+    - _fieldName: vector
+      _label: 
+      _node: {fileID: 1993175364}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: normal
+      _label: 
+      _node: {fileID: 1993175364}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: project
+      _label: 
+      _node: {fileID: 1993175364}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Project
+  vector: {x: 0, y: 0, z: 0, w: 0}
+  normal: {x: 0, y: 0, z: 0, w: 0}
+  project: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1993175365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46dd6f0cd953b2d449f9f4d100a62ef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -276.31607, y: 2740.2544}
+  ports:
+    keys:
+    - a
+    - b
+    - t
+    - lerpUnclamped
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175365}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 1993175365}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: t
+      _label: 
+      _node: {fileID: 1993175365}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: lerpUnclamped
+      _label: 
+      _node: {fileID: 1993175365}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Lerp Unclamped
+  a: {x: 0, y: 0, z: 0, w: 0}
+  b: {x: 0, y: 0, z: 0, w: 0}
+  t: 0
+  lerpUnclamped: 0
+--- !u!114 &1993175366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0866c03118e0747987f3762a92410e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -440, y: 2744}
+  ports:
+    keys:
+    - a
+    - b
+    - t
+    - lerp
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175366}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 1993175366}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: t
+      _label: 
+      _node: {fileID: 1993175366}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: lerp
+      _label: 
+      _node: {fileID: 1993175366}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Lerp
+  a: {x: 0, y: 0, z: 0, w: 0}
+  b: {x: 1234, y: 0, z: 0, w: 0}
+  t: 0
+  lerp: 0
+--- !u!114 &1993175367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab24ce396760e0c40a6160dfc8b82735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: 40, y: 2488}
+  ports:
+    keys:
+    - Default
+    - input
+    - smooth
+    - lerpCoef
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: Default
+      _label: 
+      _node: {fileID: 1993175367}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: input
+      _label: 
+      _node: {fileID: 1993175367}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: smooth
+      _label: 
+      _node: {fileID: 1993175367}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: lerpCoef
+      _label: 
+      _node: {fileID: 1993175367}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 1993175367}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Set Default
+      _node: {fileID: 1993175367}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Smooth
+  Default: {x: 0, y: 0, z: 0, w: 0}
+  input: {x: 0, y: 0, z: 0, w: 0}
+  smooth: {x: 0, y: 0, z: 0, w: 0}
+  lerpCoef: 5
+--- !u!114 &1993175368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee67b416136d2b4e8f37fe5b641478f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -280, y: 2648}
+  ports:
+    keys:
+    - one
+    values:
+    - _fieldName: one
+      _label: 
+      _node: {fileID: 1993175368}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 One
+  one: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1993175369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba5244130dee4e43b00cd6539a85532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -440, y: 2648}
+  ports:
+    keys:
+    - zero
+    values:
+    - _fieldName: zero
+      _label: 
+      _node: {fileID: 1993175369}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Zero
+  zero: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1993175370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45178309e0625c2439825bad3a312fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -120, y: 2488}
+  ports:
+    keys:
+    - a
+    - b
+    - equals
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175370}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 1993175370}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: equals
+      _label: 
+      _node: {fileID: 1993175370}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Equals
+  a: {x: 0, y: 0, z: 0, w: 0}
+  b: {x: 0, y: 0, z: 0, w: 0}
+  equals: 0
+--- !u!114 &1993175371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cecabf6b43d4c16468b3982fa4e5d28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: 40, y: 2280}
+  ports:
+    keys:
+    - a
+    - b
+    - distance
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175371}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 1993175371}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: distance
+      _label: 
+      _node: {fileID: 1993175371}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Distance
+  a: {x: 0, y: 0, z: 0, w: 0}
+  b: {x: 0, y: 0, z: 0, w: 0}
+  distance: 0
+--- !u!114 &1993175372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 899810973}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -280, y: 2488}
+  ports:
+    keys:
+    - vector4
+    - normalized
+    values:
+    - _fieldName: vector4
+      _label: 
+      _node: {fileID: 1993175372}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: normalized
+      _label: 
+      _node: {fileID: 1993175372}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 34 Normalized
+  vector4: {x: 0, y: 0, z: 0, w: 0}
+  normalized: {x: 0, y: 0, z: 0}
+--- !u!114 &1993175373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d811c75d70a3fba49a0f8d04b337b01f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -440, y: 2488}
+  ports:
+    keys:
+    - vector4
+    - magnitude
+    values:
+    - _fieldName: vector4
+      _label: 
+      _node: {fileID: 1993175373}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: magnitude
+      _label: 
+      _node: {fileID: 1993175373}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Magnitude
+  vector4: {x: 0, y: 0, z: 0, w: 0}
+  magnitude: 0
+--- !u!114 &1993175374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc58ef891c47b04b824b91b5c64a95f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: -440, y: 2328}
+  ports:
+    keys:
+    - a
+    - b
+    - dot
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175374}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 1993175374}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: dot
+      _label: 
+      _node: {fileID: 1993175374}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Dot
+  a: {x: 0, y: 0, z: 0, w: 0}
+  b: {x: 0, y: 0, z: 0, w: 0}
+  dot: {x: 0, y: 0, z: 0}
+--- !u!114 &1993175375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d26d420ce386764f9e12cf8be9273d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: 200, y: 2296}
+  ports:
+    keys:
+    - vector4
+    - scale
+    - scaled
+    values:
+    - _fieldName: vector4
+      _label: 
+      _node: {fileID: 1993175375}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: scale
+      _label: 
+      _node: {fileID: 1993175375}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: scaled
+      _label: 
+      _node: {fileID: 1993175375}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Scale 4
+  vector4: {x: 0, y: 0, z: 0, w: 0}
+  scale: {x: 1, y: 1, z: 1, w: 1}
+  scaled: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1993175376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db857c17f14d26b4f99a1a2eb7367565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: 200, y: 2168}
+  ports:
+    keys:
+    - vector4
+    - scale
+    - scaled
+    values:
+    - _fieldName: vector4
+      _label: 
+      _node: {fileID: 1993175376}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: scale
+      _label: 
+      _node: {fileID: 1993175376}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: scaled
+      _label: 
+      _node: {fileID: 1993175376}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Scale
+  vector4: {x: 0, y: 0, z: 0, w: 0}
+  scale: 0
+  scaled: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1993175377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4e4698b08e1fa46b2bf30a7c37d124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1993175295}
+  position: {x: 40, y: 2168}
+  ports:
+    keys:
+    - a
+    - b
+    - difference
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 1993175377}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: sum
+        node: {fileID: 1993175360}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 1993175377}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: vector4
+        node: {fileID: 1993175362}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: difference
+      _label: A - B
+      _node: {fileID: 1993175377}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Diff
+  a: {x: 0, y: 0, z: 0, w: 0}
+  b: {x: 0, y: 0, z: 0, w: 0}
+  difference: {x: 0, y: 0, z: 0}
 --- !u!1 &2018197676
 GameObject:
   m_ObjectHideFlags: 0
