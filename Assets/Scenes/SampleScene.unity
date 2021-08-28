@@ -607,6 +607,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56621561}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &123841908
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material (Instance)
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.8679245, g: 0.6018156, b: 0.7984987, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &127590382
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +715,108 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &130197344
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1016752076}
+    m_Modifications:
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 860
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 640
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795566, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+      propertyPath: m_Name
+      value: animation_TMProUGUI _gradient
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+--- !u!224 &130197345 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+  m_PrefabInstance: {fileID: 130197344}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &148992024
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +890,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &240629287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1945447025463986211, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &245319195 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3055716343152795565, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
@@ -929,6 +1113,1029 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734122973}
   m_CullTransparentMesh: 1
+--- !u!1 &758998186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758998192}
+  - component: {fileID: 758998191}
+  - component: {fileID: 758998190}
+  - component: {fileID: 758998195}
+  - component: {fileID: 758998194}
+  - component: {fileID: 758998193}
+  - component: {fileID: 758998188}
+  - component: {fileID: 758998187}
+  - component: {fileID: 758998205}
+  - component: {fileID: 758998204}
+  - component: {fileID: 758998208}
+  - component: {fileID: 758998207}
+  - component: {fileID: 758998206}
+  - component: {fileID: 758998196}
+  - component: {fileID: 758998189}
+  m_Layer: 0
+  m_Name: Material
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &758998187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e282f4d76858bd4fab1c16fe9e13f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 136, y: -120}
+  ports:
+    keys:
+    - _object
+    - parameter
+    values:
+    - _fieldName: _object
+      _label: Renderer
+      _node: {fileID: 758998187}
+      _typeQualifiedName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: component
+        node: {fileID: 758998195}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parameter
+      _label: Material
+      _node: {fileID: 758998187}
+      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 758998193}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Renderer Material
+  _object: {fileID: 0}
+  parameter: {fileID: 0}
+--- !u!114 &758998188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31038bd4f443d24cba509d7c431a990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 376, y: 280}
+  ports:
+    keys:
+    - paramName
+    - target
+    - targetValue
+    - duration
+    - delay
+    - loopsAmount
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: paramName
+      _label: 
+      _node: {fileID: 758998188}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: target
+      _label: Material
+      _node: {fileID: 758998188}
+      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parameter
+        node: {fileID: 758998189}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: targetValue
+      _label: Vector 4
+      _node: {fileID: 758998188}
+      _typeQualifiedName: UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: duration
+      _label: Duration (sec)
+      _node: {fileID: 758998188}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: delay
+      _label: Delay (sec)
+      _node: {fileID: 758998188}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: loopsAmount
+      _label: 
+      _node: {fileID: 758998188}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 758998188}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 758998188}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 758998191}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Vector 4 Material
+  duration: 1
+  delay: 0
+  loopsAmount: 2
+  loop: 1
+  easingMode: 1
+  target: {fileID: 0}
+  targetValue: {x: 0.1, y: 1, z: 1, w: 0}
+  paramName: _MainTex_ST
+--- !u!114 &758998189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e282f4d76858bd4fab1c16fe9e13f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 88, y: 264}
+  ports:
+    keys:
+    - _object
+    - parameter
+    values:
+    - _fieldName: _object
+      _label: Renderer
+      _node: {fileID: 758998189}
+      _typeQualifiedName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: component
+        node: {fileID: 758998196}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parameter
+      _label: Material
+      _node: {fileID: 758998189}
+      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 758998188}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Renderer Material
+  _object: {fileID: 0}
+  parameter: {fileID: 0}
+--- !u!114 &758998190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97df256d7aca4e3429c228b152a353cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 758998191}
+  - {fileID: 758998195}
+  - {fileID: 758998194}
+  - {fileID: 758998193}
+  - {fileID: 758998188}
+  - {fileID: 758998187}
+  - {fileID: 758998205}
+  - {fileID: 758998204}
+  - {fileID: 758998208}
+  - {fileID: 758998207}
+  - {fileID: 758998206}
+  - {fileID: 758998196}
+  - {fileID: 758998189}
+--- !u!114 &758998191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad9e605afee5004b8cd245751ef90cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 184, y: -200}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _label: On Flow Start
+      _node: {fileID: 758998191}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 758998193}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 758998208}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 758998188}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: OnFlowStart
+--- !u!4 &758998192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &758998193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9424d64d0b126164caf5dd32dfdcfe07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 376, y: -200}
+  ports:
+    keys:
+    - paramName
+    - target
+    - targetValue
+    - duration
+    - delay
+    - loopsAmount
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: paramName
+      _label: 
+      _node: {fileID: 758998193}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: target
+      _label: Material
+      _node: {fileID: 758998193}
+      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parameter
+        node: {fileID: 758998187}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: targetValue
+      _label: Color
+      _node: {fileID: 758998193}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: color
+        node: {fileID: 758998205}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: duration
+      _label: Duration (sec)
+      _node: {fileID: 758998193}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: delay
+      _label: Delay (sec)
+      _node: {fileID: 758998193}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: loopsAmount
+      _label: 
+      _node: {fileID: 758998193}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 758998193}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 758998193}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 758998191}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Color Material
+  duration: 0.6
+  delay: 0
+  loopsAmount: 2
+  loop: 1
+  easingMode: 1
+  target: {fileID: 0}
+  targetValue: {r: 0.3921569, g: 0.5137255, b: 0.6901961, a: 0}
+  paramName: _Color
+--- !u!114 &758998194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd414f07b75fc846a211f1a796c558f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 376, y: 616}
+  ports:
+    keys:
+    - paramName
+    - target
+    - targetValue
+    - duration
+    - delay
+    - loopsAmount
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: paramName
+      _label: 
+      _node: {fileID: 758998194}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: target
+      _label: Material
+      _node: {fileID: 758998194}
+      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: targetValue
+      _label: Float
+      _node: {fileID: 758998194}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: duration
+      _label: Duration (sec)
+      _node: {fileID: 758998194}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: delay
+      _label: Delay (sec)
+      _node: {fileID: 758998194}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: loopsAmount
+      _label: 
+      _node: {fileID: 758998194}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 758998194}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 758998194}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Float Material
+  duration: 1
+  delay: 0
+  loopsAmount: 0
+  loop: 0
+  easingMode: 1
+  target: {fileID: 0}
+  targetValue: 0
+  paramName: 
+--- !u!114 &758998195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db72aa5f993d542ae00d3866c92364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: -104, y: -120}
+  ports:
+    keys:
+    - obj
+    - component
+    values:
+    - _fieldName: obj
+      _label: Transform
+      _node: {fileID: 758998195}
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: component
+      _label: Renderer
+      _node: {fileID: 758998195}
+      _typeQualifiedName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _object
+        node: {fileID: 758998187}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Renderer
+  obj: {fileID: 873695160}
+  component: {fileID: 0}
+--- !u!114 &758998196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db72aa5f993d542ae00d3866c92364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: -152, y: 264}
+  ports:
+    keys:
+    - obj
+    - component
+    values:
+    - _fieldName: obj
+      _label: Transform
+      _node: {fileID: 758998196}
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: component
+      _label: Renderer
+      _node: {fileID: 758998196}
+      _typeQualifiedName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _object
+        node: {fileID: 758998189}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Renderer
+  obj: {fileID: 1412068724}
+  component: {fileID: 0}
+--- !u!114 &758998204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6e4702d10c9dc4c910ee776274ade2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: -72, y: -8}
+  ports:
+    keys:
+    - Min
+    - Max
+    - Result
+    values:
+    - _fieldName: Min
+      _label: 
+      _node: {fileID: 758998204}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Max
+      _label: 
+      _node: {fileID: 758998204}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Result
+      _label: 
+      _node: {fileID: 758998204}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: r
+        node: {fileID: 758998205}
+        reroutePoints: []
+      - fieldName: g
+        node: {fileID: 758998205}
+        reroutePoints: []
+      - fieldName: b
+        node: {fileID: 758998205}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Random Float
+  Min: 0
+  Max: 1
+  Result: 0.6870433
+--- !u!114 &758998205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d0cdb4c99cebb4b9043c7af3ed176f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 136, y: -8}
+  ports:
+    keys:
+    - r
+    - g
+    - b
+    - a
+    - color
+    values:
+    - _fieldName: r
+      _label: 
+      _node: {fileID: 758998205}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 758998204}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: g
+      _label: 
+      _node: {fileID: 758998205}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 758998204}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 758998205}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 758998204}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 758998205}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: color
+      _label: 
+      _node: {fileID: 758998205}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: targetValue
+        node: {fileID: 758998193}
+        reroutePoints: []
+      - fieldName: targetValue
+        node: {fileID: 758998208}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Make Color
+  r: 0
+  g: 0
+  b: 0
+  a: 1
+  color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &758998206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e282f4d76858bd4fab1c16fe9e13f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 136, y: 152}
+  ports:
+    keys:
+    - _object
+    - parameter
+    values:
+    - _fieldName: _object
+      _label: Renderer
+      _node: {fileID: 758998206}
+      _typeQualifiedName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: component
+        node: {fileID: 758998207}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parameter
+      _label: Material
+      _node: {fileID: 758998206}
+      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 758998208}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Renderer Material
+  _object: {fileID: 0}
+  parameter: {fileID: 0}
+--- !u!114 &758998207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db72aa5f993d542ae00d3866c92364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: -104, y: 152}
+  ports:
+    keys:
+    - obj
+    - component
+    values:
+    - _fieldName: obj
+      _label: Transform
+      _node: {fileID: 758998207}
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: component
+      _label: Renderer
+      _node: {fileID: 758998207}
+      _typeQualifiedName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _object
+        node: {fileID: 758998206}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Get Renderer
+  obj: {fileID: 240629287}
+  component: {fileID: 0}
+--- !u!114 &758998208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9424d64d0b126164caf5dd32dfdcfe07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 376, y: 56}
+  ports:
+    keys:
+    - paramName
+    - target
+    - targetValue
+    - duration
+    - delay
+    - loopsAmount
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: paramName
+      _label: 
+      _node: {fileID: 758998208}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: target
+      _label: Material
+      _node: {fileID: 758998208}
+      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parameter
+        node: {fileID: 758998206}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: targetValue
+      _label: Color
+      _node: {fileID: 758998208}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: color
+        node: {fileID: 758998205}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: duration
+      _label: Duration (sec)
+      _node: {fileID: 758998208}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: delay
+      _label: Delay (sec)
+      _node: {fileID: 758998208}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: loopsAmount
+      _label: 
+      _node: {fileID: 758998208}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 758998208}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 758998208}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 758998191}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Color Material
+  duration: 0.6
+  delay: 0
+  loopsAmount: 2
+  loop: 1
+  easingMode: 1
+  target: {fileID: 0}
+  targetValue: {r: 0, g: 0, b: 0, a: 0}
+  paramName: _Color
 --- !u!1 &768018604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,8 +2257,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6674854001500039299, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 123841908}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+--- !u!4 &873695160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4260980165364580414, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &892620076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4425,6 +5641,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 245319195}
+  - {fileID: 130197345}
   m_Father: {fileID: 1348369324}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4462,8 +5679,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190847
-  m_fontColor: {r: 1, g: 0.009691493, b: 0, a: 1}
+    rgba: 4294506744
+  m_fontColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
@@ -5636,7 +6853,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Rect Transform
       _node: {fileID: 1433429529}
       _typeQualifiedName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -5649,7 +6866,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Vector 3
       _node: {fileID: 1433429529}
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -5744,7 +6961,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Rect Transform
       _node: {fileID: 1433429530}
       _typeQualifiedName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -5757,7 +6974,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Vector 2
       _node: {fileID: 1433429530}
       _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -5839,31 +7056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dde8a54b77dbf84d8aff3bd32e1c689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1433429532}
-  position: {x: 8, y: -72}
-  ports:
-    keys:
-    - output
-    values:
-    - _fieldName: output
-      _label: 
-      _node: {fileID: 1433429531}
-      _typeQualifiedName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: target
-        node: {fileID: 1433429530}
-        reroutePoints: []
-      - fieldName: target
-        node: {fileID: 1433429529}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: This RectTransform
-  output: {fileID: 0}
-  graphic: {fileID: 1433429527}
 --- !u!114 &1433429532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11196,7 +12388,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: target
-      _label: 
+      _label: Transform
       _node: {fileID: 2018197681}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -11209,7 +12401,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Vector 3
       _node: {fileID: 2018197681}
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -11476,7 +12668,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Transform
       _node: {fileID: 2018197684}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -11489,7 +12681,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Vector 3
       _node: {fileID: 2018197684}
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -12025,7 +13217,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Transform
       _node: {fileID: 2018197691}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -12038,7 +13230,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Vector 3
       _node: {fileID: 2018197691}
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -12136,7 +13328,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Transform
       _node: {fileID: 2018197692}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -12149,7 +13341,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Vector 3
       _node: {fileID: 2018197692}
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -12308,7 +13500,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Transform
       _node: {fileID: 2018197694}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -12321,7 +13513,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Vector 3
       _node: {fileID: 2018197694}
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -12733,10 +13925,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1016752076}
     m_Modifications:
-    - target: {fileID: 1933654358116335122, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
-      propertyPath: waitAll.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3055716343152795565, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12823,7 +14011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3055716343152795566, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
       propertyPath: m_Name
-      value: animation_TMProUGUI
+      value: animation_TMProUGUI_color
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
@@ -12925,10 +14113,6 @@ PrefabInstance:
     - target: {fileID: 3055716343152795566, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
       propertyPath: m_Name
       value: animation1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3898522764661776694, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: waitAll.Array.size
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
