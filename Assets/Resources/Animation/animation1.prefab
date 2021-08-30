@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 337970732}
   - component: {fileID: 3898522764661776694}
   - component: {fileID: 5925184839532680350}
+  - component: {fileID: 2071429653}
   m_Layer: 5
   m_Name: animation1
   m_TagString: Untagged
@@ -75,7 +76,7 @@ MonoBehaviour:
   - {fileID: 337970732}
   - {fileID: 3898522764661776694}
   - {fileID: 5925184839532680350}
-  - {fileID: 0}
+  - {fileID: 2071429653}
 --- !u!114 &3055716343152795559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,7 +765,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: FlowInput
-        node: {fileID: 0}
+        node: {fileID: 2071429653}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1140,3 +1141,35 @@ MonoBehaviour:
   _name: Get Graphic Component
   obj: {fileID: 0}
   component: {fileID: 0}
+--- !u!114 &2071429653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  position: {x: 616, y: -344}
+  ports:
+    keys:
+    - FlowInput
+    values:
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 2071429653}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 2021904581}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: FlowEnd
