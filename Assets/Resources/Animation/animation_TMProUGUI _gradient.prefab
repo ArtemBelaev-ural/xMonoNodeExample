@@ -73,6 +73,7 @@ MonoBehaviour:
   - {fileID: 1511447440968127525}
   - {fileID: 6543117056360213926}
   - {fileID: 6633036396513472285}
+  - {fileID: 0}
 --- !u!114 &3055716343152795559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: -152, y: -184}
+  position: {x: -488, y: -280}
   ports:
     keys:
     - FlowOutput
@@ -118,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: -344, y: -88}
+  position: {x: -712, y: -184}
   ports:
     keys:
     - parent
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 72, y: -184}
+  position: {x: -296, y: -280}
   ports:
     keys:
     - value
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 248, y: -184}
+  position: {x: -136, y: -280}
   ports:
     keys:
     - target
@@ -238,7 +239,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Text Mesh Pro UGUI
       _node: {fileID: 2154730912871110743}
       _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -251,7 +252,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Color
       _node: {fileID: 2154730912871110743}
       _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -337,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: -184, y: -88}
+  position: {x: -520, y: -184}
   ports:
     keys:
     - _transform
@@ -397,7 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 520, y: 248}
+  position: {x: 136, y: 152}
   ports:
     keys:
     - inputValue
@@ -470,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 56, y: 248}
+  position: {x: -312, y: 152}
   ports:
     keys:
     - parameter
@@ -518,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 776, y: -184}
+  position: {x: 344, y: -280}
   ports:
     keys:
     - target
@@ -530,7 +531,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Text Mesh Pro UGUI
       _node: {fileID: 7035448789382114719}
       _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -543,7 +544,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Color
       _node: {fileID: 7035448789382114719}
       _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -590,7 +591,10 @@ MonoBehaviour:
       _node: {fileID: 7035448789382114719}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 0}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -632,7 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 56, y: 72}
+  position: {x: -312, y: -24}
   ports:
     keys:
     - Min
@@ -695,7 +699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 248, y: 72}
+  position: {x: -120, y: -24}
   ports:
     keys:
     - r
@@ -794,7 +798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 440, y: 72}
+  position: {x: 72, y: -24}
   ports:
     keys:
     - color0
@@ -891,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 504, y: -184}
+  position: {x: 104, y: -280}
   ports:
     keys:
     - target
@@ -903,7 +907,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Text Mesh Pro UGUI
       _node: {fileID: 6633036396513472285}
       _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
