@@ -6,7 +6,8 @@ using XMonoNode;
 [ExecuteInEditMode]
 public class SoundGetterTest : MonoBehaviour
 {
-
+    [SerializeField]
+    private FlowNodeGraphGetter graph;
     [SerializeField]
     private XSoundGetter sound = new XSoundGetter("Sounds/XContainers", "sounds.containers.main", "");
 
