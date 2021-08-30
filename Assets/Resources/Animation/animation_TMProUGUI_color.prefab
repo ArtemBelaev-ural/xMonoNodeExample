@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 173392860810405619}
   - component: {fileID: 5339853894972782467}
   - component: {fileID: 1511447440968127525}
+  - component: {fileID: 504232094}
   m_Layer: 5
   m_Name: animation_TMProUGUI_color
   m_TagString: Untagged
@@ -63,6 +64,7 @@ MonoBehaviour:
   - {fileID: 173392860810405619}
   - {fileID: 5339853894972782467}
   - {fileID: 1511447440968127525}
+  - {fileID: 504232094}
 --- !u!114 &3055716343152795559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +227,7 @@ MonoBehaviour:
     - FlowInput
     values:
     - _fieldName: target
-      _label: 
+      _label: Text Mesh Pro UGUI
       _node: {fileID: 2154730912871110743}
       _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -238,7 +240,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: targetValue
-      _label: 
+      _label: Color
       _node: {fileID: 2154730912871110743}
       _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -424,7 +426,7 @@ MonoBehaviour:
   _name: Get Random Float
   Min: 0
   Max: 1
-  Result: 0.4528287
+  Result: 0.06521475
 --- !u!114 &1511447440968127525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,3 +517,33 @@ MonoBehaviour:
   b: 0
   a: 1
   color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &504232094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7394bd8ab4f62dd49a3a8b80480c8dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  position: {x: -157.99991, y: -372.51993}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _label: 
+      _node: {fileID: 504232094}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: 'Input Parameter: Vector3'
+  output: {x: 0, y: 0, z: 0}
