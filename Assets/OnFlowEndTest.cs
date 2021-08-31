@@ -18,7 +18,7 @@ public class OnFlowEndTest : MonoBehaviour
     {
         if (start && !started)
         {
-            Start();
+            Go();
             started = true;
         }
 
@@ -29,7 +29,7 @@ public class OnFlowEndTest : MonoBehaviour
 
     }
 
-    private void Start()
+    private void Go()
     {
         graph.Flow(OnFlowEnd, "state");
     }
