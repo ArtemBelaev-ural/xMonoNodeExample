@@ -217,27 +217,14 @@ MonoBehaviour:
   position: {x: 216, y: -184}
   ports:
     keys:
-    - target
     - targetValue
+    - target
     - duration
     - delay
     - loopsAmount
     - FlowOutput
     - FlowInput
     values:
-    - _fieldName: target
-      _label: Text Mesh Pro UGUI
-      _node: {fileID: 2154730912871110743}
-      _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: text
-        node: {fileID: 173392860810405619}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: targetValue
       _label: Color
       _node: {fileID: 2154730912871110743}
@@ -249,7 +236,20 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
-      _typeConstraint: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: target
+      _label: Text Mesh Pro UGUI
+      _node: {fileID: 2154730912871110743}
+      _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: text
+        node: {fileID: 173392860810405619}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
       _dynamic: 0
     - _fieldName: duration
       _label: Duration (sec)
@@ -353,11 +353,11 @@ MonoBehaviour:
       _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: target
-        node: {fileID: 2154730912871110743}
-        reroutePoints: []
       - fieldName: value
         node: {fileID: 337970732}
+        reroutePoints: []
+      - fieldName: target
+        node: {fileID: 2154730912871110743}
         reroutePoints: []
       _direction: 1
       _connectionType: 0

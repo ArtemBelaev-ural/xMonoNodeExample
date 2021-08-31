@@ -5715,10 +5715,7 @@ MonoBehaviour:
       _node: {fileID: 3521142945012991763}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: 
-        node: {fileID: 0}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -6597,7 +6594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3521142945012991760}
-  position: {x: 136, y: 200}
+  position: {x: -104, y: 840}
   ports:
     keys:
     - input
