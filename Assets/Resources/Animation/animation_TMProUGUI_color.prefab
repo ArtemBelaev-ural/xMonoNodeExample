@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: -136, y: -184}
+  position: {x: -120, y: -328}
   ports:
     keys:
     - FlowOutput
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: -328, y: -8}
+  position: {x: -312, y: -72}
   ports:
     keys:
     - parent
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 56, y: -184}
+  position: {x: 72, y: -328}
   ports:
     keys:
     - value
@@ -172,7 +172,10 @@ MonoBehaviour:
       _node: {fileID: 337970732}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1306521151}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -332,7 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: -168, y: -72}
+  position: {x: -152, y: -232}
   ports:
     keys:
     - _transform
@@ -380,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: -184, y: 72}
+  position: {x: -168, y: -8}
   ports:
     keys:
     - Min
@@ -429,7 +432,7 @@ MonoBehaviour:
   _name: Get Random Float
   Min: 0
   Max: 1
-  Result: 0.06521475
+  Result: 0.71270466
 --- !u!114 &1511447440968127525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 24, y: 72}
+  position: {x: 40, y: -8}
   ports:
     keys:
     - r
@@ -533,7 +536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
-  position: {x: 472, y: -184}
+  position: {x: 456, y: -328}
   ports:
     keys:
     - FlowInput
@@ -546,6 +549,9 @@ MonoBehaviour:
       connections:
       - fieldName: FlowOutput
         node: {fileID: 2154730912871110743}
+        reroutePoints: []
+      - fieldName: Null
+        node: {fileID: 337970732}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
