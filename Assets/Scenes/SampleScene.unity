@@ -1043,58 +1043,6 @@ MonoBehaviour:
   m_Script: {fileID: 937258254}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 111715096}
-  position: {x: -148.19107, y: 1619.9266}
-  ports:
-    keys:
-    - _object
-    - parameter
-    values:
-    - _fieldName: _object
-      _label: Transform
-      _node: {fileID: 111715086}
-      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: parameter
-      _label: Right
-      _node: {fileID: 111715086}
-      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: Transform R Ight
-  _object: {fileID: 0}
-  parameter: {x: 0, y: 0, z: 0}
-  objectPort:
-    _fieldName: _object
-    _label: Transform
-    _node: {fileID: 111715086}
-    _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    connections: []
-    _direction: 0
-    _connectionType: 1
-    _typeConstraint: 0
-    _dynamic: 0
-  parameterPort:
-    _fieldName: parameter
-    _label: Right
-    _node: {fileID: 111715086}
-    _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    connections: []
-    _direction: 1
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
 --- !u!114 &111715087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1902,8 +1850,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph:
-    pathToContainers: Amimation
-    containerFileName: '-: None'
+    pathToContainers: Animation
+    containerFileName: New Prefab
     graphId: 
     drawPathToContainers: 1
     graphPrefab: {fileID: 0}
@@ -3579,29 +3527,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 325987652, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[3]
-      value: 
+    - target: {fileID: 1159212332, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -40
       objectReference: {fileID: 0}
-    - target: {fileID: 1058177820, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[13]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142943993071810, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[10]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944026937379, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[6]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944241891465, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[9]
-      value: 
+    - target: {fileID: 1159212332, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: -360
       objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
@@ -3651,62 +3583,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3521142944335574293, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[7]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944337081012, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[6]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142944812499465, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[14]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945012991760, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[25]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945149681207, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945208130329, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[21]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945209450218, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945363701103, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521142945385355715, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750472121540953151, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[6]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3898636488654464260, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[5]
+    - target: {fileID: 3521142945385355714, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6674854001500039299, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 123841908}
-    - target: {fileID: 7849365087632365889, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[10]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8054587013294531522, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: nodes.Array.data[11]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
 --- !u!4 &873695160 stripped
