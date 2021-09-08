@@ -7,9 +7,7 @@ using XMonoNode;
 public class SoundGetterTest : MonoBehaviour
 {
     [SerializeField]
-    private FlowNodeGraphGetter graph;
-    [SerializeField]
-    private XSoundGetter sound = new XSoundGetter("Sounds/XContainers", "sounds.containers.main", "");
+    private XSoundGetter sound = new XSoundGetter("Sounds/XContainers/", "sounds.containers.main", "");
 
     [SerializeField]
     private Transform mesh;

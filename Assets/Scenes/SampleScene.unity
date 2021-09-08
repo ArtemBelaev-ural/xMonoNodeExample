@@ -1711,7 +1711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ea23250ff47b745a70fb869ca24eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 2071429666}
+  graph: {fileID: 0}
   start: 0
 --- !u!1001 &130197344
 PrefabInstance:
@@ -1723,7 +1723,7 @@ PrefabInstance:
     - target: {fileID: 3055716343152795560, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
       propertyPath: nodes.Array.data[12]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 130197346}
     - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1819,6 +1819,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
   m_PrefabInstance: {fileID: 130197344}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &130197346 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 729610949186128849, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
+  m_PrefabInstance: {fileID: 130197344}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &148992024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,12 +1860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda85af0725393a49b2bf8d1783c42a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph:
-    pathToContainers: Animation
-    containerFileName: New Prefab
-    graphId: 
-    drawPathToContainers: 1
-    graphPrefab: {fileID: 0}
   sound:
     pathToContainers: Sounds/XContainers/
     containerFileName: horn
@@ -3527,14 +3532,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1159212332, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: position.x
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159212332, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
-      propertyPath: position.y
-      value: -360
-      objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
       value: Test XSoundGraph
@@ -3582,6 +3579,10 @@ PrefabInstance:
     - target: {fileID: 3521142944315417221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944812499464, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: audioOutput.list.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3521142945385355714, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: audioOutput.list.Array.data[0]
@@ -7031,6 +7032,7 @@ GameObject:
   - component: {fileID: 1016752076}
   - component: {fileID: 1016752078}
   - component: {fileID: 1016752077}
+  - component: {fileID: 1016752079}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7156,6 +7158,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016752075}
   m_CullTransparentMesh: 1
+--- !u!114 &1016752079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016752075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0984b2fe8fa5c9247b0960ff2131ba0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effect:
+    pathToContainers: Animation/XContainers/
+    containerFileName: ui.main
+    graphId: jump
+    drawPathToContainers: 1
+    graphPrefab: {fileID: 0}
 --- !u!1 &1077729483
 GameObject:
   m_ObjectHideFlags: 0
@@ -8453,11 +8473,9 @@ GameObject:
   - component: {fileID: 1433429528}
   - component: {fileID: 1433429527}
   - component: {fileID: 1433429526}
-  - component: {fileID: 1433429533}
-  - component: {fileID: 1433429532}
-  - component: {fileID: 1433429530}
   - component: {fileID: 1433429529}
-  - component: {fileID: 1433429534}
+  - component: {fileID: 1433429530}
+  - component: {fileID: 1433429531}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -8477,7 +8495,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 979232486}
-  - {fileID: 2021904578}
   m_Father: {fileID: 1348369324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8530,7 +8547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2071429652}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -8589,102 +8606,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1433429524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d16fa6fcd4042d7458612384457b71fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 0984b2fe8fa5c9247b0960ff2131ba0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1433429532}
-  position: {x: 344, y: 8}
-  ports:
-    keys:
-    - targetValue
-    - target
-    - duration
-    - delay
-    - loopsAmount
-    - FlowOutput
-    - FlowInput
-    values:
-    - _fieldName: targetValue
-      _label: Vector 3
-      _node: {fileID: 1433429529}
-      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 0
-    - _fieldName: target
-      _label: Rect Transform
-      _node: {fileID: 1433429529}
-      _typeQualifiedName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: duration
-      _label: Duration (sec)
-      _node: {fileID: 1433429529}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: delay
-      _label: Delay (sec)
-      _node: {fileID: 1433429529}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: loopsAmount
-      _label: 
-      _node: {fileID: 1433429529}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: Exit
-      _node: {fileID: 1433429529}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Enter
-      _node: {fileID: 1433429529}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 1433429533}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: Local Scale 2D
-  duration: 1
-  delay: 0
-  loopsAmount: 2
-  loop: 1
-  easingMode: 1
-  target: {fileID: 0}
-  targetValue: {x: 2, y: 2, z: 2}
+  effect:
+    pathToContainers: Animation/XContainers/
+    containerFileName: ui.main
+    graphId: jump
+    drawPathToContainers: 1
+    graphPrefab: {fileID: 0}
 --- !u!114 &1433429530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8694,103 +8624,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1433429524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8237dce9e360ab647b7cdd761dbbe8d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 166a3b6ec865b0049ab8f732142557ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1433429532}
-  position: {x: 344, y: -248}
-  ports:
-    keys:
-    - targetValue
-    - target
-    - duration
-    - delay
-    - loopsAmount
-    - FlowOutput
-    - FlowInput
-    values:
-    - _fieldName: targetValue
-      _label: Vector 2
-      _node: {fileID: 1433429530}
-      _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 0
-    - _fieldName: target
-      _label: Rect Transform
-      _node: {fileID: 1433429530}
-      _typeQualifiedName: UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: duration
-      _label: Duration (sec)
-      _node: {fileID: 1433429530}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: delay
-      _label: Delay (sec)
-      _node: {fileID: 1433429530}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: loopsAmount
-      _label: 
-      _node: {fileID: 1433429530}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: Exit
-      _node: {fileID: 1433429530}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Enter
-      _node: {fileID: 1433429530}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 1433429533}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: Anchored Position
-  duration: 1
-  delay: 0
-  loopsAmount: 2
-  loop: 1
-  easingMode: 1
-  target: {fileID: 0}
-  targetValue: {x: 200, y: -200}
---- !u!114 &1433429532
+  button: {fileID: 0}
+  effect:
+    pathToContainers: Sounds/XContainers/
+    containerFileName: horn
+    graphId: horn_train
+    drawPathToContainers: 1
+    graphPrefab: {fileID: 0}
+--- !u!114 &1433429531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8799,78 +8643,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1433429524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97df256d7aca4e3429c228b152a353cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 408e8c3a3674d6343860de1f8a68dd0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1433429533}
-  - {fileID: 1433429530}
-  - {fileID: 1433429529}
-  - {fileID: 1433429534}
---- !u!114 &1433429533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433429524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad9e605afee5004b8cd245751ef90cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1433429532}
-  position: {x: 8, y: -168}
-  ports:
-    keys:
-    - FlowOutput
-    values:
-    - _fieldName: FlowOutput
-      _label: Flow
-      _node: {fileID: 1433429533}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 1433429530}
-        reroutePoints: []
-      - fieldName: FlowInput
-        node: {fileID: 1433429529}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: OnFlowStart
---- !u!114 &1433429534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433429524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1433429532}
-  position: {x: 0, y: 0}
-  ports:
-    keys:
-    - FlowInput
-    values:
-    - _fieldName: FlowInput
-      _label: Enter
-      _node: {fileID: 1433429534}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: FlowEnd
+  button: {fileID: 0}
+  effect:
+    pathToContainers: Sounds/XContainers/
+    containerFileName: horn
+    graphId: horn_car
+    drawPathToContainers: 0
+    graphPrefab: {fileID: 0}
 --- !u!1 &1585330174
 GameObject:
   m_ObjectHideFlags: 0
@@ -15631,27 +15413,6 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: FlowEnd
---- !u!224 &2021904578 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-  m_PrefabInstance: {fileID: 3055716341131087727}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2071429652 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3055716343152795566, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-  m_PrefabInstance: {fileID: 3055716341131087727}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2071429666 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3055716343152795560, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-  m_PrefabInstance: {fileID: 3055716341131087727}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2071429652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97df256d7aca4e3429c228b152a353cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2095462985
 GameObject:
   m_ObjectHideFlags: 0
@@ -15767,10 +15528,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1016752076}
     m_Modifications:
-    - target: {fileID: 3055716343152795560, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
-      propertyPath: nodes.Array.size
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 3055716343152795565, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15861,104 +15618,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
---- !u!1001 &3055716341131087727
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1433429525}
-    m_Modifications:
-    - target: {fileID: 2021904587, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1433429525}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 860
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 640
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795565, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055716343152795566, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}
-      propertyPath: m_Name
-      value: animation1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1894f6b84d1fc146b79584da6d83338, type: 3}

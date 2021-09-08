@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 1511447440968127525}
   - component: {fileID: 6543117056360213926}
   - component: {fileID: 6633036396513472285}
+  - component: {fileID: 729610949186128849}
   m_Layer: 5
-  m_Name: animation_TMProUGUI _gradient
+  m_Name: 'TMProUGUI '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +74,7 @@ MonoBehaviour:
   - {fileID: 1511447440968127525}
   - {fileID: 6543117056360213926}
   - {fileID: 6633036396513472285}
-  - {fileID: 0}
+  - {fileID: 729610949186128849}
 --- !u!114 &3055716343152795559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +94,7 @@ MonoBehaviour:
     - FlowOutput
     values:
     - _fieldName: FlowOutput
-      _label: On Flow Start
+      _label: Flow
       _node: {fileID: 3055716343152795559}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -593,7 +594,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: FlowInput
-        node: {fileID: 0}
+        node: {fileID: 729610949186128849}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1000,3 +1001,35 @@ MonoBehaviour:
     topRight: {r: 0, g: 0, b: 0, a: 0}
     bottomLeft: {r: 0, g: 0, b: 0, a: 0}
     bottomRight: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &729610949186128849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  position: {x: 584, y: -280}
+  ports:
+    keys:
+    - FlowInput
+    values:
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 729610949186128849}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 7035448789382114719}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: FlowEnd

@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1511447440968127525}
   - component: {fileID: 1306521151}
   m_Layer: 5
-  m_Name: animation_TMProUGUI_color
+  m_Name: TMProUGUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
     - FlowOutput
     values:
     - _fieldName: FlowOutput
-      _label: On Flow Start
+      _label: Flow
       _node: {fileID: 3055716343152795559}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9116103262902665754}
   - component: {fileID: 8450722129241390593}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: TMProUGUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsList:
-  - id: 
-    graph: {fileID: 0}
+  - id: color
+    graph: {fileID: 3055716343152795560, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
+  - id: gradient
+    graph: {fileID: 3055716343152795560, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
