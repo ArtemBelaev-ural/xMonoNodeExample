@@ -161,6 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
   position: {x: 72, y: 232}
+  minimized: 1
   ports:
     keys:
     - whilePlay
@@ -266,6 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
   position: {x: -392, y: 264}
+  minimized: 1
   ports:
     keys:
     - audioOutput
@@ -322,6 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
   position: {x: -344, y: 136}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -368,6 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
   position: {x: -232, y: -24}
+  minimized: 1
   ports:
     keys:
     - audioOutput
@@ -404,6 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
   position: {x: 168, y: -88}
+  minimized: 1
   ports:
     keys:
     - whilePlay
@@ -509,6 +514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
   position: {x: -120, y: -120}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -541,6 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 51869666}
   position: {x: 0, y: 0}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -700,6 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -136, y: 552}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -765,6 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: 216, y: 376}
+  minimized: 1
   ports:
     keys:
     - worldUp
@@ -841,6 +850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -136, y: 376}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -905,6 +915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: 216, y: 216}
+  minimized: 1
   ports:
     keys:
     - worldUp
@@ -981,6 +992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -136, y: 216}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -1057,6 +1069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: 216, y: 72}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -1121,6 +1134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -136, y: 72}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -1163,6 +1177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: 216, y: -56}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -1227,6 +1242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: 216, y: -184}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -1291,6 +1307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -136, y: -184}
+  minimized: 1
   ports:
     keys:
     - _transform
@@ -1333,6 +1350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: 216, y: -312}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -1397,6 +1415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -136, y: -56}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -1439,6 +1458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -334.19107, y: -291.57336}
+  minimized: 1
   ports:
     keys:
     - parent
@@ -1472,6 +1492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -136, y: -296}
+  minimized: 1
   ports:
     keys:
     - _transform
@@ -1546,6 +1567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: 504, y: -24}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -1575,6 +1597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 111715096}
   position: {x: -312, y: 40}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -1590,6 +1613,83 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: OnFlowStart
+--- !u!21 &111867662
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material (Instance)
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.8679245, g: 0.6018156, b: 0.7984987, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &127590382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,9 +1884,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound:
+    graphId: engine
     pathToContainers: Sounds/XContainers/
     containerFileName: horn
-    graphId: engine
     drawPathToContainers: 0
     graphPrefab: {fileID: 0}
   mesh: {fileID: 892620077}
@@ -1836,6 +1936,83 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3055716343152795565, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
   m_PrefabInstance: {fileID: 1878850766255007580}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &416260254
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material 1 (Instance)
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.23050906, g: 0.26415092, b: 0.23347746, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &557255478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +2044,11 @@ Transform:
   m_Father: {fileID: 2119678672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!23 &673821589 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7179390055753323376, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +2156,83 @@ MonoScript:
   m_ExecutionOrder: 0
   m_ClassName: Vector4To2
   m_Namespace: XMonoNode
+--- !u!21 &729518651
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.8679245, g: 0.6018156, b: 0.7984987, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &734122973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,7 +2320,6 @@ GameObject:
   - component: {fileID: 758998191}
   - component: {fileID: 758998190}
   - component: {fileID: 758998195}
-  - component: {fileID: 758998194}
   - component: {fileID: 758998193}
   - component: {fileID: 758998188}
   - component: {fileID: 758998187}
@@ -2073,6 +2331,7 @@ GameObject:
   - component: {fileID: 758998196}
   - component: {fileID: 758998189}
   - component: {fileID: 758998197}
+  - component: {fileID: 758998198}
   m_Layer: 0
   m_Name: Material
   m_TagString: Untagged
@@ -2094,6 +2353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 136, y: -120}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -2142,6 +2402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 376, y: 280}
+  minimized: 1
   ports:
     keys:
     - paramName
@@ -2245,7 +2506,7 @@ MonoBehaviour:
   loopsAmount: 2
   loop: 1
   easingMode: 1
-  target: {fileID: 0}
+  target: {fileID: 111867662}
   targetValue: {x: 0.1, y: 1, z: 1, w: 0}
   paramName: _MainTex_ST
 --- !u!114 &758998189
@@ -2262,6 +2523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 88, y: 264}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -2293,8 +2555,8 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Get Renderer Material
-  _object: {fileID: 0}
+  _name: Get Renderer Materialsdfdsfsdf
+  _object: {fileID: 1412068722}
   parameter: {fileID: 0}
 --- !u!114 &758998190
 MonoBehaviour:
@@ -2311,7 +2573,6 @@ MonoBehaviour:
   nodes:
   - {fileID: 758998191}
   - {fileID: 758998195}
-  - {fileID: 758998194}
   - {fileID: 758998193}
   - {fileID: 758998188}
   - {fileID: 758998187}
@@ -2323,6 +2584,7 @@ MonoBehaviour:
   - {fileID: 758998196}
   - {fileID: 758998189}
   - {fileID: 758998197}
+  - {fileID: 758998198}
 --- !u!114 &758998191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2337,6 +2599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 184, y: -200}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -2389,6 +2652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 376, y: -200}
+  minimized: 1
   ports:
     keys:
     - paramName
@@ -2495,123 +2759,9 @@ MonoBehaviour:
   loopsAmount: 2
   loop: 1
   easingMode: 1
-  target: {fileID: 0}
-  targetValue: {r: 0.3921569, g: 0.5137255, b: 0.6901961, a: 0}
+  target: {fileID: 2081084139}
+  targetValue: {r: 0.49927038, g: 0.50486547, b: 0.6372001, a: 1}
   paramName: _Color
---- !u!114 &758998194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758998186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfd414f07b75fc846a211f1a796c558f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 758998190}
-  position: {x: 376, y: 616}
-  ports:
-    keys:
-    - paramName
-    - targetValue
-    - target
-    - duration
-    - delay
-    - loopsAmount
-    - FlowOutput
-    - FlowInput
-    values:
-    - _fieldName: paramName
-      _label: 
-      _node: {fileID: 758998194}
-      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: targetValue
-      _label: Float
-      _node: {fileID: 758998194}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 0
-    - _fieldName: target
-      _label: Material
-      _node: {fileID: 758998194}
-      _typeQualifiedName: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: duration
-      _label: Duration (sec)
-      _node: {fileID: 758998194}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: delay
-      _label: Delay (sec)
-      _node: {fileID: 758998194}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: loopsAmount
-      _label: 
-      _node: {fileID: 758998194}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _label: Exit
-      _node: {fileID: 758998194}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Enter
-      _node: {fileID: 758998194}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  _name: Float Material
-  duration: 1
-  delay: 0
-  loopsAmount: 0
-  loop: 0
-  easingMode: 1
-  target: {fileID: 0}
-  targetValue: 0
-  paramName: 
 --- !u!114 &758998195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,6 +2776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: -104, y: -120}
+  minimized: 1
   ports:
     keys:
     - obj
@@ -2671,6 +2822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: -152, y: 264}
+  minimized: 1
   ports:
     keys:
     - obj
@@ -2716,6 +2868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 648, y: -40}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -2731,6 +2884,62 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: FlowEnd
+--- !u!114 &758998198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758998186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3664ac3a10caa55429f9bdf049553a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 758998190}
+  position: {x: 744, y: 88}
+  minimized: 1
+  ports:
+    keys:
+    - input
+    - output
+    - clamped01
+    values:
+    - _fieldName: input
+      _label: 
+      _node: {fileID: 758998198}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _label: 
+      _node: {fileID: 758998198}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: clamped01
+      _label: 
+      _node: {fileID: 758998198}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  _name: Float Ease
+  input: 0
+  output: 0
+  clamped01: 1
+  easingMode: 23
 --- !u!114 &758998204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2745,6 +2954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: -72, y: -8}
+  minimized: 1
   ports:
     keys:
     - Min
@@ -2793,7 +3003,7 @@ MonoBehaviour:
   _name: Get Random Float
   Min: 0
   Max: 1
-  Result: 0.9157057
+  Result: 0.4346773
 --- !u!114 &758998205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2808,6 +3018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 136, y: -8}
+  minimized: 1
   ports:
     keys:
     - r
@@ -2901,6 +3112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 136, y: 152}
+  minimized: 1
   ports:
     keys:
     - _object
@@ -2933,7 +3145,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: Get Renderer Material
-  _object: {fileID: 0}
+  _object: {fileID: 673821589}
   parameter: {fileID: 0}
 --- !u!114 &758998207
 MonoBehaviour:
@@ -2949,6 +3161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: -104, y: 152}
+  minimized: 1
   ports:
     keys:
     - obj
@@ -2994,6 +3207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 758998190}
   position: {x: 376, y: 56}
+  minimized: 1
   ports:
     keys:
     - paramName
@@ -3100,9 +3314,86 @@ MonoBehaviour:
   loopsAmount: 2
   loop: 1
   easingMode: 1
-  target: {fileID: 0}
-  targetValue: {r: 0, g: 0, b: 0, a: 0}
+  target: {fileID: 416260254}
+  targetValue: {r: 0.98673856, g: 0.8083608, b: 0.21613777, a: 1}
   paramName: _Color
+--- !u!21 &761367609
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material 1 (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.23050906, g: 0.26415092, b: 0.23347746, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &768018604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,6 +3497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 827951447}
   position: {x: -8, y: 8}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -3261,6 +3553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 827951447}
   position: {x: -8, y: -104}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -3319,6 +3612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 827951447}
   position: {x: -248, y: 8}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -3369,6 +3663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 827951447}
   position: {x: 312, y: -104}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -3401,6 +3696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 827951447}
   position: {x: -248, y: -104}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -3455,6 +3751,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 64989900, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: minimized
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 869681663, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: position.x
       value: -600
@@ -3539,6 +3839,10 @@ PrefabInstance:
       propertyPath: audioOutput.list.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3521142945149681204, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: minimized
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3521142945385355714, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: audioOutput.list.Array.data[0]
       value: 
@@ -3558,7 +3862,11 @@ PrefabInstance:
     - target: {fileID: 6674854001500039299, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1615802314}
+      objectReference: {fileID: 945530658}
+    - target: {fileID: 7179390055753323376, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 761367609}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
 --- !u!4 &873695160 stripped
@@ -3639,6 +3947,83 @@ MonoScript:
   m_ExecutionOrder: 0
   m_ClassName: TransformRIght
   m_Namespace: XMonoNode
+--- !u!21 &945530658
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material (Instance) (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.8679245, g: 0.6018156, b: 0.7984987, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3956,6 +4341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -600, y: -520}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -4067,6 +4453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -552, y: -600}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -4125,6 +4512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 40, y: -328}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -4180,6 +4568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -616, y: -424}
+  minimized: 1
   ports:
     keys:
     - output
@@ -4213,6 +4602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -152, y: -440}
+  minimized: 1
   ports:
     keys:
     - condition
@@ -4274,6 +4664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -152, y: -328}
+  minimized: 1
   ports:
     keys:
     - condition
@@ -4335,6 +4726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 40, y: -440}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -4390,6 +4782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -616, y: -312}
+  minimized: 1
   ports:
     keys:
     - output
@@ -4423,6 +4816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 40, y: -216}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -4478,6 +4872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -152, y: -216}
+  minimized: 1
   ports:
     keys:
     - flow
@@ -4538,6 +4933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -616, y: -136}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -4573,6 +4969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -616, y: -232}
+  minimized: 1
   ports:
     keys:
     - output
@@ -4606,6 +5003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -376, y: -200}
+  minimized: 1
   ports:
     keys:
     - condition
@@ -4678,6 +5076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 72, y: 280}
+  minimized: 1
   ports:
     keys:
     - frameCount
@@ -4711,6 +5110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 40, y: 152}
+  minimized: 1
   ports:
     keys:
     - First
@@ -4771,6 +5171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -200, y: 152}
+  minimized: 1
   ports:
     keys:
     - First
@@ -4831,6 +5232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -168, y: 280}
+  minimized: 1
   ports:
     keys:
     - frameCount
@@ -4864,6 +5266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 40, y: 40}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -4922,6 +5325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -200, y: 40}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -4980,6 +5384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -424, y: -696}
+  minimized: 1
   ports:
     keys:
     - fixedDeltaTime
@@ -5022,6 +5427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -376, y: -56}
+  minimized: 1
   ports:
     keys:
     - condition
@@ -5097,6 +5503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -152, y: -56}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -5143,6 +5550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -632, y: -56}
+  minimized: 1
   ports:
     keys:
     - output
@@ -5188,6 +5596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: -152, y: -664}
+  minimized: 1
   ports:
     keys:
     - start
@@ -5349,6 +5758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 24, y: -664}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -5407,6 +5817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1001768286}
   position: {x: 280, y: -664}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -5483,6 +5894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 88, y: -360}
+  minimized: 1
   ports:
     keys:
     - a
@@ -5537,6 +5949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -72, y: -360}
+  minimized: 1
   ports:
     keys:
     - a
@@ -5591,6 +6004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -232, y: -360}
+  minimized: 1
   ports:
     keys:
     - a
@@ -5645,6 +6059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -392, y: -360}
+  minimized: 1
   ports:
     keys:
     - a
@@ -5738,6 +6153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -552, y: -360}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -5781,6 +6197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 248, y: -360}
+  minimized: 1
   ports:
     keys:
     - a
@@ -5835,6 +6252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -392, y: -248}
+  minimized: 1
   ports:
     keys:
     - x
@@ -5889,6 +6307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -232, y: -248}
+  minimized: 1
   ports:
     keys:
     - x
@@ -5943,6 +6362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -72, y: -136}
+  minimized: 1
   ports:
     keys:
     - a
@@ -5996,7 +6416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
-  position: {x: 0, y: 0}
+  position: {x: 88, y: -8}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6051,6 +6472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 88, y: -136}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6105,6 +6527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -232, y: -136}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6159,6 +6582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -392, y: -136}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6225,6 +6649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 408, y: -248}
+  minimized: 1
   ports:
     keys:
     - x
@@ -6267,6 +6692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 248, y: -248}
+  minimized: 1
   ports:
     keys:
     - x
@@ -6309,6 +6735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 88, y: -248}
+  minimized: 1
   ports:
     keys:
     - x
@@ -6351,6 +6778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -72, y: -248}
+  minimized: 1
   ports:
     keys:
     - x
@@ -6393,6 +6821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 296, y: -24}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6459,6 +6888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -72, y: -24}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6525,6 +6955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -232, y: -24}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6591,6 +7022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -392, y: -24}
+  minimized: 1
   ports:
     keys:
     - a
@@ -6657,6 +7089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -216, y: 120}
+  minimized: 1
   ports:
     keys:
     - inputs
@@ -6736,6 +7169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -392, y: 120}
+  minimized: 1
   ports:
     keys:
     - inputs
@@ -6815,6 +7249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 184, y: 120}
+  minimized: 1
   ports:
     keys:
     - inputs
@@ -6894,6 +7329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: -56, y: 120}
+  minimized: 1
   ports:
     keys:
     - inputs
@@ -6973,6 +7409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1004178128}
   position: {x: 435, y: -358}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -7138,9 +7575,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect:
+    graphId: jump
     pathToContainers: Animation/XContainers/
     containerFileName: ui.main
-    graphId: jump
     drawPathToContainers: 1
     graphPrefab: {fileID: 0}
 --- !u!1 &1077729483
@@ -7181,6 +7618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1077729488}
   position: {x: 72, y: -40}
+  minimized: 1
   ports:
     keys:
     - input
@@ -7211,6 +7649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1077729488}
   position: {x: 72, y: 56}
+  minimized: 1
   ports:
     keys:
     - input
@@ -7244,6 +7683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1077729488}
   position: {x: -248, y: -40}
+  minimized: 1
   ports:
     keys:
     - Text
@@ -7305,6 +7745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1077729488}
   position: {x: -607.4999, y: 45.980103}
+  minimized: 1
   ports:
     keys:
     - output
@@ -7360,6 +7801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1077729488}
   position: {x: -552, y: -88}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -7419,6 +7861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1077729488}
   position: {x: 88, y: -136}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -7486,6 +7929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: 296, y: 24}
+  minimized: 1
   ports:
     keys:
     - input
@@ -7544,6 +7988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -312, y: -168}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -7590,6 +8035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -312, y: -168}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -7623,6 +8069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -312, y: 152}
+  minimized: 1
   ports:
     keys:
     - inputValue
@@ -7693,6 +8140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -312, y: 24}
+  minimized: 1
   ports:
     keys:
     - inputValue
@@ -7763,6 +8211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -24, y: 24}
+  minimized: 1
   ports:
     keys:
     - b
@@ -7826,6 +8275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -24, y: 152}
+  minimized: 1
   ports:
     keys:
     - b
@@ -7889,6 +8339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -8, y: 280}
+  minimized: 1
   ports:
     keys:
     - a
@@ -7946,6 +8397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: 296, y: 280}
+  minimized: 1
   ports:
     keys:
     - input
@@ -7992,6 +8444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: -72, y: -168}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -8056,6 +8509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: 296, y: 152}
+  minimized: 1
   ports:
     keys:
     - input
@@ -8089,6 +8543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1158217433}
   position: {x: 344, y: -168}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -8389,7 +8844,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aede33ba03e0d484793f8fafddb64bc9, type: 2}
+  - {fileID: 729518651}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8445,7 +8900,7 @@ GameObject:
   - component: {fileID: 1433429528}
   - component: {fileID: 1433429527}
   - component: {fileID: 1433429526}
-  - component: {fileID: 1433429529}
+  - component: {fileID: 1433429532}
   - component: {fileID: 1433429530}
   - component: {fileID: 1433429531}
   m_Layer: 5
@@ -8569,24 +9024,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433429524}
   m_CullTransparentMesh: 1
---- !u!114 &1433429529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433429524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0984b2fe8fa5c9247b0960ff2131ba0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effect:
-    pathToContainers: Animation/XContainers/
-    containerFileName: ui.main
-    graphId: jump
-    drawPathToContainers: 1
-    graphPrefab: {fileID: 0}
 --- !u!114 &1433429530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8601,9 +9038,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 0}
   effect:
+    graphId: horn_train
     pathToContainers: Sounds/XContainers/
     containerFileName: horn
-    graphId: horn_train
     drawPathToContainers: 1
     graphPrefab: {fileID: 0}
 --- !u!114 &1433429531
@@ -8620,10 +9057,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 0}
   effect:
+    graphId: horn_car
     pathToContainers: Sounds/XContainers/
     containerFileName: horn
-    graphId: horn_car
     drawPathToContainers: 0
+    graphPrefab: {fileID: 0}
+--- !u!114 &1433429532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433429524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a12b544582c89340b75e3c230d9b6f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Effects:
+  - graphId: jump
+    pathToContainers: Animation/XContainers/
+    containerFileName: ui.main
+    drawPathToContainers: 1
+    graphPrefab: {fileID: 0}
+  - graphId: defile
+    pathToContainers: Animation/XContainers/
+    containerFileName: ui.main
+    drawPathToContainers: 1
     graphPrefab: {fileID: 0}
 --- !u!1 &1453012247
 GameObject:
@@ -8655,9 +9115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundGetter:
+    graphId: ambient
     pathToContainers: Sounds/XContainers/
     containerFileName: ambients
-    graphId: ambient
     drawPathToContainers: 0
     graphPrefab: {fileID: 0}
   playOnStart: 1
@@ -8736,83 +9196,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1615802314
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: New Material (Instance) (Instance)
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 0.8679245, g: 0.6018156, b: 0.7984987, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
 --- !u!115 &1957028072
 MonoScript:
   m_ObjectHideFlags: 0
@@ -9011,6 +9394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -312, y: -8}
+  minimized: 1
   ports:
     keys:
     - to
@@ -9065,6 +9449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: -376}
+  minimized: 1
   ports:
     keys:
     - b
@@ -9119,6 +9504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: -168}
+  minimized: 1
   ports:
     keys:
     - b
@@ -9173,6 +9559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -312, y: -168}
+  minimized: 1
   ports:
     keys:
     - scale
@@ -9227,6 +9614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -536, y: -168}
+  minimized: 1
   ports:
     keys:
     - scale
@@ -9281,6 +9669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 136, y: -376}
+  minimized: 1
   ports:
     keys:
     - b
@@ -9335,6 +9724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -536, y: -8}
+  minimized: 1
   ports:
     keys:
     - distance
@@ -9389,6 +9779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 360, y: -376}
+  minimized: 1
   ports:
     keys:
     - vector3
@@ -9491,6 +9882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -296, y: -376}
+  minimized: 1
   ports:
     keys:
     - vector3
@@ -9557,6 +9949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 3256}
+  minimized: 1
   ports:
     keys:
     - vector4
@@ -9707,6 +10100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -520, y: -344}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -9750,6 +10144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: -8}
+  minimized: 1
   ports:
     keys:
     - axis
@@ -9816,6 +10211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 136, y: -168}
+  minimized: 1
   ports:
     keys:
     - b
@@ -9870,6 +10266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -24, y: 184}
+  minimized: 1
   ports:
     keys:
     - up
@@ -9900,6 +10297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -152, y: 184}
+  minimized: 1
   ports:
     keys:
     - back
@@ -9930,6 +10328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -408, y: 184}
+  minimized: 1
   ports:
     keys:
     - one
@@ -9960,6 +10359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -280, y: 184}
+  minimized: 1
   ports:
     keys:
     - forward
@@ -9990,6 +10390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -536, y: 184}
+  minimized: 1
   ports:
     keys:
     - zero
@@ -10020,6 +10421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 104, y: 184}
+  minimized: 1
   ports:
     keys:
     - down
@@ -10050,6 +10452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 136, y: -8}
+  minimized: 1
   ports:
     keys:
     - b
@@ -10104,6 +10507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 360, y: 184}
+  minimized: 1
   ports:
     keys:
     - right
@@ -10134,6 +10538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 232, y: 184}
+  minimized: 1
   ports:
     keys:
     - left
@@ -10164,6 +10569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 360, y: -168}
+  minimized: 1
   ports:
     keys:
     - vector3
@@ -10206,6 +10612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 360, y: -8}
+  minimized: 1
   ports:
     keys:
     - vector3
@@ -10248,6 +10655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 136, y: 264}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10314,6 +10722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 264}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10356,6 +10765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -312, y: 264}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10398,6 +10808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -536, y: 264}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10440,6 +10851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 136, y: 408}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10506,6 +10918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 408}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10572,6 +10985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -312, y: 408}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10638,6 +11052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -536, y: 408}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10704,6 +11119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -312, y: 600}
+  minimized: 1
   ports:
     keys:
     - vector
@@ -10758,6 +11174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -536, y: 600}
+  minimized: 1
   ports:
     keys:
     - vector
@@ -10812,6 +11229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 600}
+  minimized: 1
   ports:
     keys:
     - inDirection
@@ -10866,6 +11284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 104, y: 1704}
+  minimized: 1
   ports:
     keys:
     - inDirection
@@ -10920,6 +11339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 1704}
+  minimized: 1
   ports:
     keys:
     - a
@@ -10986,6 +11406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 1704}
+  minimized: 1
   ports:
     keys:
     - a
@@ -11052,6 +11473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 1704}
+  minimized: 1
   ports:
     keys:
     - Default
@@ -11140,6 +11562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 88, y: 1624}
+  minimized: 1
   ports:
     keys:
     - right
@@ -11170,6 +11593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 1624}
+  minimized: 1
   ports:
     keys:
     - left
@@ -11200,6 +11624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 1624}
+  minimized: 1
   ports:
     keys:
     - down
@@ -11230,6 +11655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 88, y: 1544}
+  minimized: 1
   ports:
     keys:
     - up
@@ -11260,6 +11686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 1544}
+  minimized: 1
   ports:
     keys:
     - one
@@ -11290,6 +11717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 1544}
+  minimized: 1
   ports:
     keys:
     - zero
@@ -11320,6 +11748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 1544}
+  minimized: 1
   ports:
     keys:
     - a
@@ -11374,6 +11803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 88, y: 1368}
+  minimized: 1
   ports:
     keys:
     - from
@@ -11428,6 +11858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 1368}
+  minimized: 1
   ports:
     keys:
     - from
@@ -11482,6 +11913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 1368}
+  minimized: 1
   ports:
     keys:
     - a
@@ -11536,6 +11968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 1368}
+  minimized: 1
   ports:
     keys:
     - vector2
@@ -11578,6 +12011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 88, y: 1208}
+  minimized: 1
   ports:
     keys:
     - vector2
@@ -11620,6 +12054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -88, y: 1208}
+  minimized: 1
   ports:
     keys:
     - a
@@ -11674,6 +12109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 1208}
+  minimized: 1
   ports:
     keys:
     - vector2
@@ -11728,6 +12164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 1208}
+  minimized: 1
   ports:
     keys:
     - vector2
@@ -11782,6 +12219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 136, y: 1000}
+  minimized: 1
   ports:
     keys:
     - a
@@ -11836,6 +12274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -56, y: 1000}
+  minimized: 1
   ports:
     keys:
     - a
@@ -11890,6 +12329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -248, y: 1000}
+  minimized: 1
   ports:
     keys:
     - vector2
@@ -11980,6 +12420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 1000}
+  minimized: 1
   ports:
     keys:
     - x
@@ -12034,6 +12475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -56, y: 856}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12088,6 +12530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -248, y: 856}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12130,6 +12573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 856}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12172,6 +12616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -424, y: 3000}
+  minimized: 1
   ports:
     keys:
     - one
@@ -12208,6 +12653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 3320}
+  minimized: 1
   ports:
     keys:
     - vector4
@@ -12253,6 +12699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -424, y: 3128}
+  minimized: 1
   ports:
     keys:
     - one
@@ -12289,6 +12736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 3192}
+  minimized: 1
   ports:
     keys:
     - vector3
@@ -12334,6 +12782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -424, y: 3256}
+  minimized: 1
   ports:
     keys:
     - one
@@ -12370,6 +12819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 3064}
+  minimized: 1
   ports:
     keys:
     - vector2
@@ -12415,6 +12865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 3128}
+  minimized: 1
   ports:
     keys:
     - vector3
@@ -12460,6 +12911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -264, y: 3000}
+  minimized: 1
   ports:
     keys:
     - vector2
@@ -12505,6 +12957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -120, y: 1928}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12547,6 +13000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 40, y: 1928}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12589,6 +13043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -280, y: 1928}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12631,6 +13086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 1928}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12673,6 +13129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -120, y: 2168}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12730,6 +13187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -280, y: 2168}
+  minimized: 1
   ports:
     keys:
     - vector4
@@ -12832,6 +13290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 2168}
+  minimized: 1
   ports:
     keys:
     - x
@@ -12913,6 +13372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 200, y: 1928}
+  minimized: 1
   ports:
     keys:
     - a
@@ -12991,6 +13451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -96.31607, y: 2744.2544}
+  minimized: 1
   ports:
     keys:
     - vector
@@ -13045,6 +13506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -276.31607, y: 2740.2544}
+  minimized: 1
   ports:
     keys:
     - a
@@ -13111,6 +13573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 2744}
+  minimized: 1
   ports:
     keys:
     - a
@@ -13177,6 +13640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 40, y: 2488}
+  minimized: 1
   ports:
     keys:
     - Default
@@ -13265,6 +13729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -280, y: 2648}
+  minimized: 1
   ports:
     keys:
     - one
@@ -13295,6 +13760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 2648}
+  minimized: 1
   ports:
     keys:
     - zero
@@ -13325,6 +13791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -120, y: 2488}
+  minimized: 1
   ports:
     keys:
     - a
@@ -13379,6 +13846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 40, y: 2280}
+  minimized: 1
   ports:
     keys:
     - a
@@ -13433,6 +13901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -280, y: 2488}
+  minimized: 1
   ports:
     keys:
     - vector4
@@ -13475,6 +13944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 2488}
+  minimized: 1
   ports:
     keys:
     - vector4
@@ -13517,6 +13987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: -440, y: 2328}
+  minimized: 1
   ports:
     keys:
     - a
@@ -13571,6 +14042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 200, y: 2296}
+  minimized: 1
   ports:
     keys:
     - vector4
@@ -13625,6 +14097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 200, y: 2168}
+  minimized: 1
   ports:
     keys:
     - vector4
@@ -13679,6 +14152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 40, y: 2168}
+  minimized: 1
   ports:
     keys:
     - a
@@ -13739,6 +14213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 1993175295}
   position: {x: 0, y: 0}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -13804,6 +14279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 120, y: -184}
+  minimized: 1
   ports:
     keys:
     - Target
@@ -13950,6 +14426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -136, y: 72}
+  minimized: 1
   ports:
     keys:
     - FlowOutput
@@ -14001,6 +14478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 120, y: 72}
+  minimized: 1
   ports:
     keys:
     - duration
@@ -14115,6 +14593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 568, y: -184}
+  minimized: 1
   ports:
     keys:
     - Target
@@ -14226,6 +14705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 344, y: -184}
+  minimized: 1
   ports:
     keys:
     - Target
@@ -14337,6 +14817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 1016, y: 72}
+  minimized: 1
   ports:
     keys:
     - targetValue
@@ -14446,6 +14927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -200, y: -88}
+  minimized: 1
   ports:
     keys:
     - b
@@ -14506,6 +14988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -216, y: -344}
+  minimized: 1
   ports:
     keys:
     - inputValue
@@ -14588,6 +15071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -200, y: -232}
+  minimized: 1
   ports:
     keys:
     - Target
@@ -14672,6 +15156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -152, y: 328}
+  minimized: 1
   ports:
     keys:
     - b
@@ -14732,6 +15217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -424, y: 168}
+  minimized: 1
   ports:
     keys:
     - inputValue
@@ -14802,6 +15288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -392, y: 328}
+  minimized: 1
   ports:
     keys:
     - Target
@@ -14886,6 +15373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 568, y: 72}
+  minimized: 1
   ports:
     keys:
     - targetValue
@@ -14997,6 +15485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 344, y: 72}
+  minimized: 1
   ports:
     keys:
     - targetValue
@@ -15109,6 +15598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: -152, y: 168}
+  minimized: 1
   ports:
     keys:
     - input
@@ -15169,6 +15659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 792, y: 72}
+  minimized: 1
   ports:
     keys:
     - targetValue
@@ -15280,6 +15771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 1016, y: -184}
+  minimized: 1
   ports:
     keys:
     - Target
@@ -15388,6 +15880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 792, y: -184}
+  minimized: 1
   ports:
     keys:
     - Target
@@ -15499,6 +15992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 2018197678}
   position: {x: 0, y: 0}
+  minimized: 1
   ports:
     keys:
     - FlowInput
@@ -15514,6 +16008,83 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   _name: FlowEnd
+--- !u!21 &2081084139
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.8679245, g: 0.6018156, b: 0.7984987, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &2095462985
 GameObject:
   m_ObjectHideFlags: 0
