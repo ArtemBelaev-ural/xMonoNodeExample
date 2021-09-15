@@ -1788,8 +1788,8 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
       _label: Exit
@@ -1844,8 +1844,8 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
       _label: Exit
@@ -1903,8 +1903,8 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
       _label: Exit
@@ -11762,8 +11762,8 @@ MonoBehaviour:
         node: {fileID: 1058177831}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
+      _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
       _label: Exit
