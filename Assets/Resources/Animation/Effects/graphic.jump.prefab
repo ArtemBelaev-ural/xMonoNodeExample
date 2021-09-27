@@ -80,8 +80,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: OnFlowStart
   position: {x: -424, y: -328}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - FlowOutput
@@ -102,7 +103,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: OnFlowStart
 --- !u!114 &3055716343152795558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,8 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: Local Scale 2D
   position: {x: -232, y: -328}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - targetValue
@@ -127,6 +128,7 @@ MonoBehaviour:
     - loopsAmount
     - FlowOutput
     - FlowInput
+    - onStart
     values:
     - _fieldName: targetValue
       _label: Vector 3
@@ -182,7 +184,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: Exit
+      _label: End
       _node: {fileID: 3055716343152795558}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -195,7 +197,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: Enter
+      _label: Begin
       _node: {fileID: 3055716343152795558}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -207,7 +209,16 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Local Scale 2D
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 3055716343152795558}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   duration: 1
   delay: 0
   loopsAmount: 2
@@ -228,8 +239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: Parent Transform
   position: {x: -840, y: -232}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - parent
@@ -253,7 +265,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Parent Transform
   parent: {fileID: 0}
 --- !u!114 &2021904579
 MonoBehaviour:
@@ -268,8 +279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: Get Transform Local Position
   position: {x: -696, y: 8}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - _transform
@@ -301,7 +313,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Get Transform Local Position
   _transform: {fileID: 0}
   localPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2021904587
@@ -317,8 +328,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: Local Position 2D
   position: {x: -232, y: -88}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - targetValue
@@ -328,6 +340,7 @@ MonoBehaviour:
     - loopsAmount
     - FlowOutput
     - FlowInput
+    - onStart
     values:
     - _fieldName: targetValue
       _label: Vector 3
@@ -386,7 +399,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowOutput
-      _label: Exit
+      _label: End
       _node: {fileID: 2021904587}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -399,7 +412,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: FlowInput
-      _label: Enter
+      _label: Begin
       _node: {fileID: 2021904587}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -411,7 +424,16 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Local Position 2D
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 2021904587}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   duration: 1
   delay: 0
   loopsAmount: 2
@@ -432,8 +454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: Join
   position: {x: 8, y: -328}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - waitAll
@@ -504,7 +527,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  _name: Join
   waitAll: []
 --- !u!114 &2071429653
 MonoBehaviour:
@@ -519,8 +541,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: FlowEnd
   position: {x: 152, y: -328}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - FlowInput
@@ -538,7 +561,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: FlowEnd
 --- !u!114 &5950746871332454001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,8 +574,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: Vector 3 Sum
   position: {x: -456, y: -24}
-  minimized: 1
+  showState: 0
   ports:
     keys:
     - a
@@ -596,7 +619,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Vector 3 Sum
   a: {x: 0, y: -200, z: 0}
   b: {x: 0, y: 0, z: 0}
   sum: {x: 0, y: 0, z: 0}
@@ -613,8 +635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
+  _name: Float Ease
   position: {x: 24, y: -24}
-  minimized: 1
+  showState: 1
   ports:
     keys:
     - input
@@ -651,8 +674,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Float Ease
   input: 0
-  output: 0
+  output: -0
   clamped01: 1
-  easingMode: 1
+  easingMode: 26
