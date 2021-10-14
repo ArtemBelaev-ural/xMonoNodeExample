@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3096466707929796548}
   - component: {fileID: 3096466707929796551}
   - component: {fileID: 3096466707929796545}
+  - component: {fileID: -5880565955128742812}
   m_Layer: 0
   m_Name: ambient
   m_TagString: Untagged
@@ -49,7 +50,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
+  _name: OnFlowStart
   position: {x: -184, y: -104}
+  showState: 0
   ports:
     keys:
     - FlowOutput
@@ -67,7 +70,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: OnFlowStart
 --- !u!114 &3096466707929796546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +83,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
+  _name: Play
   position: {x: 168, y: -104}
+  showState: 0
   ports:
     keys:
     - whilePlay
@@ -171,7 +175,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Play
   audioInput:
     list: []
   Playing:
@@ -189,10 +192,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
+  _name: FlowEnd
   position: {x: 360, y: -104}
+  showState: 0
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -207,7 +213,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: FlowEnd
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 3096466707929796549}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!114 &3096466707929796548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +242,7 @@ MonoBehaviour:
   - {fileID: 3096466707929796549}
   - {fileID: 3096466707929796551}
   - {fileID: 3096466707929796545}
+  - {fileID: -5880565955128742812}
 --- !u!114 &3096466707929796551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,10 +256,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
+  _name: Source
   position: {x: -328, y: -8}
+  showState: 0
   ports:
     keys:
     - audioOutput
+    - customParameters
+    - volume
+    - pitch
     values:
     - _fieldName: audioOutput
       _label: 
@@ -257,11 +279,43 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-  _name: Source
-  soundId: 101
+    - _fieldName: customParameters
+      _label: 
+      _node: {fileID: 3096466707929796551}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: volume
+      _label: 
+      _node: {fileID: 3096466707929796551}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pitch
+      _label: 
+      _node: {fileID: 3096466707929796551}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
   audioOutput:
     list:
     - {fileID: 0}
+  soundId: 101
+  customParameters: 0
+  volume: 1
+  pitch: 1
 --- !u!114 &3096466707929796545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +329,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
+  _name: Loop
   position: {x: 8, y: -24}
+  showState: 0
   ports:
     keys:
     - loop
@@ -318,9 +374,50 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
-  _name: Loop
   audioInput:
     list: []
   audioOutput:
     list: []
   loop: 1
+--- !u!114 &-5880565955128742812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096466707929796550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3096466707929796548}
+  _name: FlowEnd
+  position: {x: 712, y: -24}
+  showState: 0
+  ports:
+    keys:
+    - deleteGraph
+    - FlowInput
+    values:
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: -5880565955128742812}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: -5880565955128742812}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0

@@ -245,6 +245,7 @@ MonoBehaviour:
     - loopsAmount
     - FlowOutput
     - FlowInput
+    - onStart
     values:
     - _fieldName: targetValue
       _label: Color
@@ -322,6 +323,16 @@ MonoBehaviour:
         node: {fileID: 337970732}
         reroutePoints: []
       _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 2154730912871110743}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -541,6 +552,7 @@ MonoBehaviour:
     - loopsAmount
     - FlowOutput
     - FlowInput
+    - onStart
     values:
     - _fieldName: targetValue
       _label: Color
@@ -624,6 +636,16 @@ MonoBehaviour:
         node: {fileID: 6633036396513472285}
         reroutePoints: []
       _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 7035448789382114719}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
@@ -911,7 +933,7 @@ MonoBehaviour:
   graph: {fileID: 3055716343152795560}
   _name: Gradient TextMeshProUGUI
   position: {x: 104, y: -280}
-  showState: 0
+  showState: 1
   ports:
     keys:
     - targetValue
@@ -921,6 +943,7 @@ MonoBehaviour:
     - loopsAmount
     - FlowOutput
     - FlowInput
+    - onStart
     values:
     - _fieldName: targetValue
       _label: Gradient
@@ -1004,11 +1027,21 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 6633036396513472285}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   duration: 1
   delay: 0
   loopsAmount: 0
   loop: 0
-  easingMode: 1
+  easingMode: 7
   target: {fileID: 0}
   targetValue:
     topLeft: {r: 0, g: 0, b: 0, a: 0}
@@ -1034,6 +1067,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -1048,6 +1082,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 729610949186128849}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!114 &-5597408934117302230
 MonoBehaviour:
   m_ObjectHideFlags: 0

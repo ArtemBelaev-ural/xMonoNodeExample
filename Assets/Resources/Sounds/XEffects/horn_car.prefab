@@ -13,6 +13,11 @@ GameObject:
   - component: {fileID: 6928095400519087701}
   - component: {fileID: 177916015379500958}
   - component: {fileID: 3185668306962876479}
+  - component: {fileID: -4738751532537057604}
+  - component: {fileID: 790315364563033909}
+  - component: {fileID: 1498433959272989360}
+  - component: {fileID: 6763471153492900624}
+  - component: {fileID: 2692362312157232354}
   m_Layer: 0
   m_Name: horn_car
   m_TagString: Untagged
@@ -47,13 +52,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3185668306962876479}
-  position: {x: -300, y: -100}
+  _name: Execute Event
+  position: {x: -296, y: -104}
+  showState: 0
   ports:
     keys:
     - FlowOutput
     values:
     - _fieldName: FlowOutput
-      _label: Execute
+      _label: Flow
       _node: {fileID: 8485438116486140961}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -65,7 +72,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Execute Event
 --- !u!114 &6928095400519087701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +85,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3185668306962876479}
-  position: {x: 100, y: -50}
+  _name: Play
+  position: {x: 56, y: -40}
+  showState: 1
   ports:
     keys:
     - whilePlay
@@ -88,13 +96,17 @@ MonoBehaviour:
     - Playing
     - FlowInput
     - FlowOutput
+    - stop
     values:
     - _fieldName: whilePlay
       _label: 
       _node: {fileID: 6928095400519087701}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 790315364563033909}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -110,7 +122,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: audioInput
-      _label: 
+      _label: Input
       _node: {fileID: 6928095400519087701}
       _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -155,7 +167,16 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  _name: Play
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 6928095400519087701}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   audioInput:
     list: []
   Playing:
@@ -173,10 +194,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3185668306962876479}
+  _name: Source
   position: {x: -400, y: 50}
+  showState: 0
   ports:
     keys:
     - audioOutput
+    - customParameters
+    - volume
+    - pitch
     values:
     - _fieldName: audioOutput
       _label: 
@@ -191,11 +217,43 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
-  _name: Source
-  soundId: 45
+    - _fieldName: customParameters
+      _label: 
+      _node: {fileID: 177916015379500958}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: volume
+      _label: 
+      _node: {fileID: 177916015379500958}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pitch
+      _label: 
+      _node: {fileID: 177916015379500958}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
   audioOutput:
     list:
     - {fileID: 0}
+  soundId: 45
+  customParameters: 0
+  volume: 1
+  pitch: 1
 --- !u!114 &3185668306962876479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,4 +270,422 @@ MonoBehaviour:
   - {fileID: 8485438116486140961}
   - {fileID: 6928095400519087701}
   - {fileID: 177916015379500958}
-  EventToTestExecute: Execute Event
+  - {fileID: -4738751532537057604}
+  - {fileID: 790315364563033909}
+  - {fileID: 1498433959272989360}
+  - {fileID: 6763471153492900624}
+  - {fileID: 2692362312157232354}
+--- !u!114 &-4738751532537057604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934275997025576796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f3ba9b0895c694bb7e7907bb5610c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3185668306962876479}
+  _name: Float Mult
+  position: {x: 104, y: -216}
+  showState: 0
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: -4738751532537057604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: -4738751532537057604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: result
+      _label: A x B
+      _node: {fileID: -4738751532537057604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  a: 0
+  b: 0
+  result: 0
+--- !u!114 &790315364563033909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934275997025576796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3185668306962876479}
+  _name: FlowEnd
+  position: {x: 296, y: -40}
+  showState: 0
+  ports:
+    keys:
+    - deleteGraph
+    - FlowInput
+    values:
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 790315364563033909}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 790315364563033909}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: whilePlay
+        node: {fileID: 6928095400519087701}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
+--- !u!114 &1498433959272989360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934275997025576796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3185668306962876479}
+  _name: Play
+  position: {x: 344, y: 88}
+  showState: 1
+  ports:
+    keys:
+    - audioInput
+    - Playing
+    - stop
+    - onEnd
+    - whilePlay
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 1498433959272989360}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 1498433959272989360}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 1498433959272989360}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 1498433959272989360}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 1498433959272989360}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 1498433959272989360}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 1498433959272989360}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &6763471153492900624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934275997025576796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3185668306962876479}
+  _name: Play
+  position: {x: 384.5, y: -163.5}
+  showState: 0
+  ports:
+    keys:
+    - audioInput
+    - Playing
+    - stop
+    - onEnd
+    - whilePlay
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 6763471153492900624}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 6763471153492900624}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 6763471153492900624}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 6763471153492900624}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 6763471153492900624}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 6763471153492900624}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 6763471153492900624}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  audioInput:
+    list: []
+  Playing:
+    list: []
+--- !u!114 &2692362312157232354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934275997025576796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ffd38370b30d742b4552a90097a158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3185668306962876479}
+  _name: TextMeshProUGUI Color
+  position: {x: -122.5, y: -198.5}
+  showState: 0
+  ports:
+    keys:
+    - target
+    - targetValue
+    - onStart
+    - duration
+    - delay
+    - loopsAmount
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: target
+      _label: Text Mesh Pro UGUI
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: targetValue
+      _label: Color
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: duration
+      _label: Duration (sec)
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: delay
+      _label: Delay (sec)
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: loopsAmount
+      _label: 
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: End
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Begin
+      _node: {fileID: 2692362312157232354}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  duration: 1
+  delay: 0
+  loopsAmount: 0
+  loop: 0
+  easingMode: 1
+  target: {fileID: 0}
+  targetValue: {r: 0, g: 0, b: 0, a: 0}

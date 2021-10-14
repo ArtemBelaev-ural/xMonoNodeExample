@@ -624,6 +624,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -635,6 +636,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 51869672}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!1 &56621561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1656,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -1655,6 +1668,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 111715097}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!114 &111715098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1815,10 +1839,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1016752076}
     m_Modifications:
-    - target: {fileID: 3055716343152795560, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
-      propertyPath: nodes.Array.data[12]
-      value: 
-      objectReference: {fileID: 130197346}
     - target: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1914,17 +1934,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3055716343152795565, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
   m_PrefabInstance: {fileID: 130197344}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &130197346 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 729610949186128849, guid: 9daa5256d274fb349b0eb87788003b60, type: 3}
-  m_PrefabInstance: {fileID: 130197344}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &148992024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,6 +3021,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -3023,6 +3033,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 758998197}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!114 &758998198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3553,6 +3574,10 @@ GameObject:
   - component: {fileID: 845761608}
   - component: {fileID: 845761607}
   - component: {fileID: 845761606}
+  - component: {fileID: 845761618}
+  - component: {fileID: 845761619}
+  - component: {fileID: 845761621}
+  - component: {fileID: 845761620}
   m_Layer: 0
   m_Name: Custom Events
   m_TagString: Untagged
@@ -3574,7 +3599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: 'Parameter: float'
-  position: {x: -376, y: 200}
+  position: {x: -392, y: 344}
   showState: 2
   ports:
     keys:
@@ -3608,7 +3633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: Log
-  position: {x: 268.5, y: 257}
+  position: {x: 264, y: 392}
   showState: 0
   ports:
     keys:
@@ -3664,7 +3689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: Log
-  position: {x: 240.5, y: 140}
+  position: {x: 232, y: 280}
   showState: 0
   ports:
     keys:
@@ -3720,7 +3745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: Invoke Graph
-  position: {x: -168, y: 136}
+  position: {x: -184, y: 280}
   showState: 0
   ports:
     keys:
@@ -3815,7 +3840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: Log
-  position: {x: -8, y: 8}
+  position: {x: -24, y: 152}
   showState: 0
   ports:
     keys:
@@ -3871,7 +3896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: Log
-  position: {x: -8, y: -104}
+  position: {x: 264, y: -184}
   showState: 0
   ports:
     keys:
@@ -3894,10 +3919,7 @@ MonoBehaviour:
       _node: {fileID: 845761611}
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 845761614}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -3909,7 +3931,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: FlowOutput
-        node: {fileID: 845761615}
+        node: {fileID: 845761618}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -3930,7 +3952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: CustomEvent
-  position: {x: -392, y: 8}
+  position: {x: -408, y: 152}
   showState: 0
   ports:
     keys:
@@ -3974,6 +3996,10 @@ MonoBehaviour:
   - {fileID: 845761608}
   - {fileID: 845761607}
   - {fileID: 845761606}
+  - {fileID: 845761618}
+  - {fileID: 845761619}
+  - {fileID: 845761621}
+  - {fileID: 845761620}
 --- !u!114 &845761614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3988,11 +4014,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 845761613}
   _name: FlowEnd
-  position: {x: 312, y: -104}
+  position: {x: 280, y: -72}
   showState: 0
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -4000,13 +4027,24 @@ MonoBehaviour:
       _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: FlowOutput
-        node: {fileID: 845761611}
+      - fieldName: onEnd
+        node: {fileID: 845761618}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 845761614}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!114 &845761615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4034,7 +4072,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: FlowInput
-        node: {fileID: 845761611}
+        node: {fileID: 845761618}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4069,6 +4107,269 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &845761618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845761605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d977313947e4d4e4cb4a5ef74164182d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 845761613}
+  _name: Invoke Graph By Ref
+  position: {x: -72, y: -104}
+  showState: 0
+  ports:
+    keys:
+    - onEnd
+    - parameters
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 845761618}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 845761614}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 845761619}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parameters
+      _label: 
+      _node: {fileID: 845761618}
+      _typeQualifiedName: System.String[], mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 845761618}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 845761611}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 845761618}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 845761615}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  graphPrefab: {fileID: 7697778375750297097, guid: 65d504dd006bfac4d9b46f75d75ba4df, type: 3}
+  parameters: []
+--- !u!114 &845761619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845761605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542da5e0df5d9e545b590dfd20f13290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 845761613}
+  _name: Log
+  position: {x: 312, y: 24}
+  showState: 0
+  ports:
+    keys:
+    - Text
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: Text
+      _label: 
+      _node: {fileID: 845761619}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 845761619}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 845761619}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: onEnd
+        node: {fileID: 845761618}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Text: Ref end
+--- !u!114 &845761620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845761605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d977313947e4d4e4cb4a5ef74164182d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 845761613}
+  _name: Invoke Graph By Ref
+  position: {x: 26.5, y: -221}
+  showState: 0
+  ports:
+    keys:
+    - onEnd
+    - parameters
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 845761620}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parameters
+      _label: 
+      _node: {fileID: 845761620}
+      _typeQualifiedName: System.String[], mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 845761620}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 845761620}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  graphPrefab: {fileID: 7697778375750297097, guid: 65d504dd006bfac4d9b46f75d75ba4df, type: 3}
+  parameters: []
+--- !u!114 &845761621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845761605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d977313947e4d4e4cb4a5ef74164182d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 845761613}
+  _name: Invoke Graph By Ref
+  position: {x: 61.5, y: 53}
+  showState: 0
+  ports:
+    keys:
+    - onEnd
+    - parameters
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 845761621}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parameters
+      _label: 
+      _node: {fileID: 845761621}
+      _typeQualifiedName: System.String[], mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 845761621}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 845761621}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  graphPrefab: {fileID: 3185668306962876479, guid: 2f7ed8b8195ba534b99b39506d2a5fde, type: 3}
+  parameters: []
 --- !u!1001 &869681655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6002,6 +6303,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -6016,6 +6318,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 1001768313}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!1 &1004178123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6309,6 +6622,7 @@ MonoBehaviour:
   - {fileID: 1004178137}
   - {fileID: 1004178136}
   - {fileID: 1004178134}
+  - {fileID: 1004178135}
   - {fileID: 1004178147}
   - {fileID: 1004178146}
   - {fileID: 1004178145}
@@ -7593,6 +7907,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -7604,6 +7919,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 1004178152}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!1 &1016752075
 GameObject:
   m_ObjectHideFlags: 0
@@ -8040,6 +8366,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -8054,6 +8381,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 1077729492}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!23 &1097564477 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6674854001500039299, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
@@ -8722,6 +9060,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -8736,6 +9075,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 1158217446}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!115 &1184141206
 MonoScript:
   m_ObjectHideFlags: 0
@@ -9316,6 +9666,136 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1535908065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3055716343152795566, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
+  m_PrefabInstance: {fileID: 1878850766255007580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1535908066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535908065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ffd38370b30d742b4552a90097a158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1535908075}
+  _name: TextMeshProUGUI Color
+  position: {x: -104, y: -152}
+  showState: 0
+  ports:
+    keys:
+    - target
+    - targetValue
+    - onStart
+    - duration
+    - delay
+    - loopsAmount
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: target
+      _label: Text Mesh Pro UGUI
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: targetValue
+      _label: Color
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: duration
+      _label: Duration (sec)
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: delay
+      _label: Delay (sec)
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: loopsAmount
+      _label: 
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: End
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Begin
+      _node: {fileID: 1535908066}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  duration: 1
+  delay: 0
+  loopsAmount: 0
+  loop: 0
+  easingMode: 1
+  target: {fileID: 0}
+  targetValue: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &1535908075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3055716343152795560, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
+  m_PrefabInstance: {fileID: 1878850766255007580}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535908065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97df256d7aca4e3429c228b152a353cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1585330174
 GameObject:
   m_ObjectHideFlags: 0
@@ -9658,6 +10138,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -9675,6 +10156,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 1910369319}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!4 &1910369320
 Transform:
   m_ObjectHideFlags: 0
@@ -14711,6 +15203,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -14722,6 +15215,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 1993175378}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!1 &2018197676
 GameObject:
   m_ObjectHideFlags: 0
@@ -16545,6 +17049,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -16556,6 +17061,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 2018197697}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
 --- !u!21 &2081084139
 Material:
   serializedVersion: 6
@@ -16755,6 +17271,10 @@ PrefabInstance:
     - target: {fileID: 2154730912871110743, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
       propertyPath: easingMode
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795560, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
+      propertyPath: nodes.Array.size
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3055716343152795565, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
       propertyPath: m_Pivot.x

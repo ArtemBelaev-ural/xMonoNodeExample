@@ -204,6 +204,9 @@ MonoBehaviour:
   ports:
     keys:
     - audioOutput
+    - customParameters
+    - volume
+    - pitch
     values:
     - _fieldName: audioOutput
       _label: 
@@ -218,10 +221,43 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 0
+    - _fieldName: customParameters
+      _label: 
+      _node: {fileID: 5048594353163516847}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: volume
+      _label: 
+      _node: {fileID: 5048594353163516847}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pitch
+      _label: 
+      _node: {fileID: 5048594353163516847}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
   audioOutput:
     list:
     - {fileID: 0}
   soundId: 42
+  customParameters: 0
+  volume: 1
+  pitch: 1
 --- !u!114 &7697778375750297097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +367,7 @@ MonoBehaviour:
     list: []
   audioOutput:
     list: []
-  pitch: 1.0264618
+  pitch: 0.98157775
 --- !u!114 &9060132588543838406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +425,7 @@ MonoBehaviour:
       _dynamic: 0
   Min: 0.95
   Max: 1.05
-  Result: 0.96426576
+  Result: 0.98157775
 --- !u!114 &-5112283003690645705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,6 +445,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -423,6 +460,17 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: -5112283003690645705}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 1
 --- !u!114 &-542892821763595462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,7 +580,7 @@ MonoBehaviour:
     - output
     values:
     - _fieldName: output
-      _label: 
+      _label: Default
       _node: {fileID: -8188614521843715529}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
