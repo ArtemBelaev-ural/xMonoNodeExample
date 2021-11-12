@@ -23,6 +23,10 @@ GameObject:
   - component: {fileID: 3898522764661776694}
   - component: {fileID: 5925184839532680350}
   - component: {fileID: 2071429653}
+  - component: {fileID: 2467193310687252874}
+  - component: {fileID: -8164470263238722588}
+  - component: {fileID: 3277310915549459}
+  - component: {fileID: -587322743827566191}
   m_Layer: 5
   m_Name: graphic.defile
   m_TagString: Untagged
@@ -61,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97df256d7aca4e3429c228b152a353cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  updateMode: 0
   nodes:
   - {fileID: 3055716343152795559}
   - {fileID: 3055716343152795557}
@@ -75,6 +80,10 @@ MonoBehaviour:
   - {fileID: 3898522764661776694}
   - {fileID: 5925184839532680350}
   - {fileID: 2071429653}
+  - {fileID: 2467193310687252874}
+  - {fileID: -8164470263238722588}
+  - {fileID: 3277310915549459}
+  - {fileID: -587322743827566191}
 --- !u!114 &3055716343152795559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +249,7 @@ MonoBehaviour:
   delay: 0
   loopsAmount: 1
   loop: 0
-  easingMode: 13
+  easingMode: 10
   target: {fileID: 0}
   targetValue: {x: 0, y: 0, z: 360}
   modAngle: 0
@@ -387,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 3055716343152795560}
   _name: Image Color
-  position: {x: -24, y: 184}
+  position: {x: -24, y: 280}
   showState: 0
   ports:
     keys:
@@ -666,7 +675,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  inputValue: {x: -860, y: 525, z: 0}
+  inputValue: {x: 0, y: 0, z: 0}
   output: {x: 0, y: 0, z: 0}
 --- !u!114 &2021904581
 MonoBehaviour:
@@ -1177,6 +1186,7 @@ MonoBehaviour:
   ports:
     keys:
     - FlowInput
+    - deleteGraph
     values:
     - _fieldName: FlowInput
       _label: Enter
@@ -1191,3 +1201,138 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 2071429653}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
+--- !u!114 &2467193310687252874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7879bd379e5aa4eb11a8947888d27e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  _name: 'Input Param: Color'
+  position: {x: -360, y: 312}
+  showState: 0
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _label: Default
+      _node: {fileID: 2467193310687252874}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-8164470263238722588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7394bd8ab4f62dd49a3a8b80480c8dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  _name: 'Input Param: Vector3'
+  position: {x: -360, y: 392}
+  showState: 0
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _label: Default
+      _node: {fileID: -8164470263238722588}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {x: 0, y: 0, z: 0}
+--- !u!114 &3277310915549459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2aeda3a856fea545ac28e7ee50aa594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  _name: 'Input Param: int'
+  position: {x: -152, y: 424}
+  showState: 0
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _label: Default
+      _node: {fileID: 3277310915549459}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  output: 0
+--- !u!114 &-587322743827566191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055716343152795566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38208434ce31a0c458a3272958f32790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 3055716343152795560}
+  _name: 'Output: Color'
+  position: {x: 248, y: 344}
+  showState: 0
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _label: 
+      _node: {fileID: -587322743827566191}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  input: {r: 0, g: 0, b: 0, a: 0}
