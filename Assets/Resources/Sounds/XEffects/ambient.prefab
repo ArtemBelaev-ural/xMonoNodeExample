@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3096466707929796548}
   - component: {fileID: 3096466707929796551}
   - component: {fileID: 3096466707929796545}
-  - component: {fileID: -5880565955128742812}
+  - component: {fileID: 8087849732600088059}
   m_Layer: 0
   m_Name: ambient
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
   _name: Play
-  position: {x: 168, y: -104}
+  position: {x: 248, y: -104}
   showState: 0
   ports:
     keys:
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
   _name: FlowEnd
-  position: {x: 360, y: -104}
+  position: {x: 440, y: -104}
   showState: 0
   ports:
     keys:
@@ -243,7 +243,7 @@ MonoBehaviour:
   - {fileID: 3096466707929796549}
   - {fileID: 3096466707929796551}
   - {fileID: 3096466707929796545}
-  - {fileID: -5880565955128742812}
+  - {fileID: 8087849732600088059}
 --- !u!114 &3096466707929796551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
   _name: Source
-  position: {x: -328, y: -8}
+  position: {x: -392, y: -24}
   showState: 0
   ports:
     keys:
@@ -274,7 +274,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: audioInput
-        node: {fileID: 3096466707929796545}
+        node: {fileID: 8087849732600088059}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
   _name: Loop
-  position: {x: 8, y: -24}
+  position: {x: 88, y: -24}
   showState: 0
   ports:
     keys:
@@ -356,7 +356,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: audioOutput
-        node: {fileID: 3096466707929796551}
+        node: {fileID: 8087849732600088059}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -380,7 +380,7 @@ MonoBehaviour:
   audioOutput:
     list: []
   loop: 1
---- !u!114 &-5880565955128742812
+--- !u!114 &8087849732600088059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -389,36 +389,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 3096466707929796550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
+  m_Script: {fileID: 11500000, guid: d45aba9043424ec4ca9e7b3070dc23a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 3096466707929796548}
-  _name: FlowEnd
-  position: {x: 712, y: -24}
+  _name: Mixer
+  position: {x: -136, y: -24}
   showState: 0
   ports:
     keys:
-    - deleteGraph
-    - FlowInput
+    - audioMixerGroup
+    - audioInput
+    - audioOutput
     values:
-    - _fieldName: deleteGraph
+    - _fieldName: audioMixerGroup
       _label: 
-      _node: {fileID: -5880565955128742812}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _node: {fileID: 8087849732600088059}
+      _typeQualifiedName: UnityEngine.Audio.AudioMixerGroup, UnityEngine.AudioModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
-      _typeConstraint: 0
+      _typeConstraint: 1
       _dynamic: 0
-    - _fieldName: FlowInput
-      _label: Enter
-      _node: {fileID: -5880565955128742812}
-      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 8087849732600088059}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 3096466707929796551}
+        reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
+      _connectionType: 1
+      _typeConstraint: 1
       _dynamic: 0
-  deleteGraph: 0
+    - _fieldName: audioOutput
+      _label: Output
+      _node: {fileID: 8087849732600088059}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 3096466707929796545}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  audioInput:
+    list: []
+  audioOutput:
+    list: []
+  audioMixerGroup: {fileID: 24300002, guid: 06acdac2f2e32d34f8bc916959da9f56, type: 2}
