@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084af2b44b841da47a14896392cfc9f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStatic: 0
   itemsList:
   - id: horn_train
     graph: {fileID: 7697778375750297097, guid: 65d504dd006bfac4d9b46f75d75ba4df, type: 3}

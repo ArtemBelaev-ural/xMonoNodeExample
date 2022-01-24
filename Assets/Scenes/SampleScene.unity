@@ -123,6 +123,208 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &37438258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3521142945012991770, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &37438286 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521142945012991760, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37438258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5df17e0f194b346b0c86fa95b1e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &37438287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37438258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edef491b6b1c704d9419c082bff2f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 37438286}
+  _name: Add Float
+  position: {x: -215, y: -260}
+  showState: 0
+  ports:
+    keys:
+    - FloatA
+    - FloatB
+    - Result
+    values:
+    - _fieldName: FloatA
+      _label: 
+      _node: {fileID: 37438287}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FloatB
+      _label: 
+      _node: {fileID: 37438287}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Result
+      _label: 
+      _node: {fileID: 37438287}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  FloatA: 0
+  FloatB: 0
+  operation: 0
+  Result: 0
+--- !u!114 &37438288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37438258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f3ba9b0895c694bb7e7907bb5610c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 37438286}
+  _name: Float Mult
+  position: {x: -583, y: -246}
+  showState: 0
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 37438288}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 37438288}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: result
+      _label: A x B
+      _node: {fileID: 37438288}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  a: 0
+  b: 0
+  result: 0
+--- !u!114 &37438289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37438258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfcf05d326d57c6469423ed4fcae72e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 37438286}
+  _name: 'Parameter: At'
+  position: {x: -540, y: 952}
+  showState: 0
+  ports:
+    keys:
+    - at
+    - value
+    values:
+    - _fieldName: at
+      _label: 
+      _node: {fileID: 37438289}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: value
+      _label: 
+      _node: {fileID: 37438289}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  at: 0
+  value: 
+--- !u!114 &37438290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37438258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389857692a225194bb684be95a9eadbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 37438286}
+  _name: 'Parameter: float'
+  position: {x: -675, y: 56}
+  showState: 1
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _label: Default
+      _node: {fileID: 37438290}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  index: -1
+  output: 0
 --- !u!1 &51869663
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +548,9 @@ MonoBehaviour:
   - {fileID: 51869671}
   - {fileID: 51869670}
   - {fileID: 51869669}
+  - {fileID: 51869672}
+  updateParametersNodes: []
+  endNodes:
   - {fileID: 51869672}
 --- !u!114 &51869667
 MonoBehaviour:
@@ -1639,6 +1844,9 @@ MonoBehaviour:
   - {fileID: 111715083}
   - {fileID: 111715082}
   - {fileID: 111715081}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 111715097}
 --- !u!114 &111715097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,6 +2177,398 @@ Transform:
   m_Father: {fileID: 2119678672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!1 &600974132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600974133}
+  - component: {fileID: 600974139}
+  - component: {fileID: 600974138}
+  - component: {fileID: 600974137}
+  - component: {fileID: 600974136}
+  - component: {fileID: 600974135}
+  - component: {fileID: 600974134}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &600974133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600974132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 957777815}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &600974134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600974132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f35b70068ceff4da02cce6b5ac8cf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 600974137}
+  _name: Random Volume
+  position: {x: -168, y: 40}
+  showState: 0
+  ports:
+    keys:
+    - minValue
+    - maxValue
+    - audioInput
+    - audioOutput
+    values:
+    - _fieldName: minValue
+      _label: Min Volume
+      _node: {fileID: 600974134}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: maxValue
+      _label: Max Volume
+      _node: {fileID: 600974134}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 600974134}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 600974135}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: audioOutput
+      _label: Output
+      _node: {fileID: 600974134}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 600974139}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  audioInput:
+    list: []
+  audioOutput:
+    list: []
+  minValue: 0.9
+  maxValue: 1
+--- !u!114 &600974135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600974132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 600974137}
+  _name: Source
+  position: {x: -504, y: 24}
+  showState: 1
+  ports:
+    keys:
+    - audioOutput
+    - customParameters
+    - volume
+    - pitch
+    values:
+    - _fieldName: audioOutput
+      _label: 
+      _node: {fileID: 600974135}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioInput
+        node: {fileID: 600974134}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: customParameters
+      _label: 
+      _node: {fileID: 600974135}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: volume
+      _label: 
+      _node: {fileID: 600974135}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pitch
+      _label: 
+      _node: {fileID: 600974135}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  audioOutput:
+    list: []
+  soundId: 45
+  customParameters: 1
+  volume: 0
+  pitch: 1
+--- !u!114 &600974136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600974132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad9e605afee5004b8cd245751ef90cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 600974137}
+  _name: OnFlowStart
+  position: {x: -312, y: -56}
+  showState: 0
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _label: Flow
+      _node: {fileID: 600974136}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 600974139}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &600974137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600974132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5df17e0f194b346b0c86fa95b1e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 0
+  nodes:
+  - {fileID: 600974139}
+  - {fileID: 600974138}
+  - {fileID: 600974136}
+  - {fileID: 600974135}
+  - {fileID: 600974134}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 600974138}
+--- !u!114 &600974138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600974132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0856e6e1a103246b65885853b0a51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 600974137}
+  _name: FlowEnd
+  position: {x: 440, y: -56}
+  showState: 0
+  ports:
+    keys:
+    - deleteGraph
+    - FlowInput
+    values:
+    - _fieldName: deleteGraph
+      _label: 
+      _node: {fileID: 600974138}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 600974138}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: onEnd
+        node: {fileID: 600974139}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  deleteGraph: 0
+--- !u!114 &600974139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600974132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8974065941b60c41ad4f6dd09bc652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 600974137}
+  _name: Play
+  position: {x: 88, y: -56}
+  showState: 0
+  ports:
+    keys:
+    - audioInput
+    - Playing
+    - stop
+    - onEnd
+    - whilePlay
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: audioInput
+      _label: Input
+      _node: {fileID: 600974139}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: audioOutput
+        node: {fileID: 600974134}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Playing
+      _label: 
+      _node: {fileID: 600974139}
+      _typeQualifiedName: XMonoNode.AudioSources, XSoundNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: stop
+      _label: 
+      _node: {fileID: 600974139}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: onEnd
+      _label: 
+      _node: {fileID: 600974139}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 600974138}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: whilePlay
+      _label: 
+      _node: {fileID: 600974139}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: On Start
+      _node: {fileID: 600974139}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Play
+      _node: {fileID: 600974139}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 600974136}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  audioInput:
+    list: []
+  Playing:
+    list: []
 --- !u!1 &615299916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,23 +2621,12 @@ MonoBehaviour:
       _node: {fileID: 615299917}
       _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Target
-        node: {fileID: 615299921}
-        reroutePoints: []
-      - fieldName: target
-        node: {fileID: 615299924}
-        reroutePoints: []
-      - fieldName: target
-        node: {fileID: 615299923}
-        reroutePoints: []
-      - fieldName: target
-        node: {fileID: 615299922}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  index: -1
   output: {fileID: 638365276}
 --- !u!114 &615299918
 MonoBehaviour:
@@ -2309,10 +2898,7 @@ MonoBehaviour:
       _node: {fileID: 615299921}
       _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 615299917}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -2649,10 +3235,7 @@ MonoBehaviour:
       _node: {fileID: 615299924}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: output
-        node: {fileID: 615299917}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -2809,6 +3392,9 @@ MonoBehaviour:
   - {fileID: 615299919}
   - {fileID: 615299917}
   - {fileID: 615299918}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 615299927}
 --- !u!114 &615299927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2983,6 +3569,176 @@ MonoScript:
   m_ExecutionOrder: 0
   m_ClassName: Vector4To2
   m_Namespace: XMonoNode
+--- !u!1 &726211915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3521142944279065641, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &726211923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521142944279065635, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726211915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e077b87e9a3f7f04c96c42bb2ca0278c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &726211925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726211915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b950c96ee38a248bc5bae1dc060c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &726211926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726211915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5df17e0f194b346b0c86fa95b1e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &726211928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726211915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85b95de46b03ee44aba752ff6b2ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 726211926}
+  _name: 'Variable: float'
+  position: {x: -504, y: 232}
+  showState: 0
+  ports:
+    keys:
+    - inputValue
+    - output
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: inputValue
+      _label: 
+      _node: {fileID: 726211928}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _label: 
+      _node: {fileID: 726211928}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: volume
+        node: {fileID: 726211925}
+        reroutePoints: []
+      - fieldName: b
+        node: {fileID: 726211929}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: Exit
+      _node: {fileID: 726211928}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Enter
+      _node: {fileID: 726211928}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  inputValue: 0.5
+  output: 0
+--- !u!114 &726211929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726211915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f3ba9b0895c694bb7e7907bb5610c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 726211926}
+  _name: Float Mult
+  position: {x: 328, y: 200}
+  showState: 0
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    values:
+    - _fieldName: a
+      _label: 
+      _node: {fileID: 726211929}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: lerpOutput
+        node: {fileID: 726211923}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _label: 
+      _node: {fileID: 726211929}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 726211928}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: result
+      _label: A x B
+      _node: {fileID: 726211929}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  a: 0
+  b: 0
+  result: 0
 --- !u!21 &729518651
 Material:
   serializedVersion: 6
@@ -3172,11 +3928,12 @@ MonoBehaviour:
   graph: {fileID: 758998190}
   _name: Get Renderer Material
   position: {x: 120, y: -72}
-  showState: 0
+  showState: 1
   ports:
     keys:
     - _object
     - parameter
+    - materialIndex
     values:
     - _fieldName: _object
       _label: Renderer
@@ -3204,8 +3961,20 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: materialIndex
+      _label: 
+      _node: {fileID: 758998187}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
   _object: {fileID: 1097564477}
   parameter: {fileID: 0}
+  materialIndex: 1
+  shared: 0
 --- !u!114 &758998190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3225,6 +3994,9 @@ MonoBehaviour:
   - {fileID: 758998187}
   - {fileID: 758998197}
   - {fileID: 758998199}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 758998197}
 --- !u!114 &758998191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3614,14 +4386,12 @@ MonoBehaviour:
       _node: {fileID: 845761606}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: parameters 0
-        node: {fileID: 845761609}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  index: -1
   output: 0.7288135
 --- !u!114 &845761607
 MonoBehaviour:
@@ -3815,10 +4585,7 @@ MonoBehaviour:
       _node: {fileID: 845761609}
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 845761606}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -4009,6 +4776,9 @@ MonoBehaviour:
   - {fileID: 845761619}
   - {fileID: 845761621}
   - {fileID: 845761620}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 845761614}
 --- !u!114 &845761614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,6 +5213,50 @@ PrefabInstance:
       propertyPath: ports.values.Array.data[1].connections.Array.data[0].fieldName
       value: FlowOutput
       objectReference: {fileID: 0}
+    - target: {fileID: 1105925815, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -520
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105925815, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105925816, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -520
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105925816, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 856
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105925817, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105925817, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 616
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105925820, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -680
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105925820, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499169401, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: ports.values.Array.data[0].connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908185949183101047, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908185949183101047, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 88
+      objectReference: {fileID: 0}
     - target: {fileID: 1994548763906102659, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: output
       value: 0.2
@@ -4450,6 +5264,50 @@ PrefabInstance:
     - target: {fileID: 2904054696217081718, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: output
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065634, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065634, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065634, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: ports.values.Array.data[2].connections.Array.data[0].node
+      value: 
+      objectReference: {fileID: 726211929}
+    - target: {fileID: 3521142944279065634, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: ports.values.Array.data[2].connections.Array.data[0].fieldName
+      value: result
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[10]
+      value: 
+      objectReference: {fileID: 726211928}
+    - target: {fileID: 3521142944279065636, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[11]
+      value: 
+      objectReference: {fileID: 726211929}
+    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: volume
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: showState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: ports.values.Array.data[2].connections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142944279065639, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: ports.values.Array.data[2].connections.Array.data[0].fieldName
+      value: output
       objectReference: {fileID: 0}
     - target: {fileID: 3521142944315417220, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Name
@@ -4499,6 +5357,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3521142945012991760, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.size
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521142945012991760, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[26]
+      value: 
+      objectReference: {fileID: 37438287}
+    - target: {fileID: 3521142945012991760, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[27]
+      value: 
+      objectReference: {fileID: 37438288}
+    - target: {fileID: 3521142945012991760, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[28]
+      value: 
+      objectReference: {fileID: 37438289}
+    - target: {fileID: 3521142945012991760, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.data[29]
+      value: 
+      objectReference: {fileID: 37438290}
+    - target: {fileID: 3521142945012991766, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: showState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3898636488654464260, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: nodes.Array.size
       value: 7
@@ -4511,9 +5393,33 @@ PrefabInstance:
       propertyPath: nodes.Array.size
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3998296848585534248, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -488
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998296848585534248, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 696
+      objectReference: {fileID: 0}
     - target: {fileID: 4260980165364580414, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767020486374321364, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: nodes.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857961907502692946, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116563269304222615, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.x
+      value: -328
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116563269304222615, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+      propertyPath: position.y
+      value: 456
       objectReference: {fileID: 0}
     - target: {fileID: 6674854001500039299, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4525,6 +5431,148 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: aede33ba03e0d484793f8fafddb64bc9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+--- !u!1 &869681656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4019510963326010349, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &869681657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4767020486374321364, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869681656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5df17e0f194b346b0c86fa95b1e1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &869681658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869681656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d495831231730b74f8b51adefbb8cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 869681657}
+  _name: Float Audio Mixer
+  position: {x: 152, y: 200}
+  showState: 1
+  ports:
+    keys:
+    - exposedParam
+    - target
+    - targetValue
+    - onStart
+    - duration
+    - delay
+    - loopsAmount
+    - FlowOutput
+    - FlowInput
+    values:
+    - _fieldName: exposedParam
+      _label: 
+      _node: {fileID: 869681658}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: target
+      _label: Audio Mixer
+      _node: {fileID: 869681658}
+      _typeQualifiedName: UnityEngine.Audio.AudioMixer, UnityEngine.AudioModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: targetValue
+      _label: Float
+      _node: {fileID: 869681658}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: onStart
+      _label: 
+      _node: {fileID: 869681658}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: duration
+      _label: Duration (sec)
+      _node: {fileID: 869681658}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: delay
+      _label: Delay (sec)
+      _node: {fileID: 869681658}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: loopsAmount
+      _label: 
+      _node: {fileID: 869681658}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _label: End
+      _node: {fileID: 869681658}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _label: Begin
+      _node: {fileID: 869681658}
+      _typeQualifiedName: XMonoNode.Flow, FlowNodes, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  duration: 1
+  delay: 0
+  loopsAmount: 0
+  loop: 0
+  easingMode: 1
+  target: {fileID: 24100000, guid: 06acdac2f2e32d34f8bc916959da9f56, type: 2}
+  targetValue: 0
+  exposedParam: MasterLowPass
 --- !u!4 &873695160 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4260980165364580414, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
@@ -4603,6 +5651,11 @@ MonoScript:
   m_ExecutionOrder: 0
   m_ClassName: TransformRIght
   m_Namespace: XMonoNode
+--- !u!4 &957777815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3521142944315417221, guid: db35e7aac1b8feb4085adfe4c54dc96a, type: 3}
+  m_PrefabInstance: {fileID: 869681655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,6 +6073,10 @@ MonoBehaviour:
   - {fileID: 1001768311}
   - {fileID: 1001768312}
   - {fileID: 1001768313}
+  updateParametersNodes:
+  - {fileID: 1001768297}
+  endNodes:
+  - {fileID: 1001768313}
 --- !u!114 &1001768287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5161,14 +6218,12 @@ MonoBehaviour:
       _node: {fileID: 1001768290}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: condition
-        node: {fileID: 1001768291}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  index: -1
   output: 0
 --- !u!114 &1001768291
 MonoBehaviour:
@@ -5259,10 +6314,7 @@ MonoBehaviour:
       _node: {fileID: 1001768292}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 1001768294}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -5376,14 +6428,12 @@ MonoBehaviour:
       _node: {fileID: 1001768294}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: condition
-        node: {fileID: 1001768292}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  index: -1
   output: 0
 --- !u!114 &1001768295
 MonoBehaviour:
@@ -5564,14 +6614,12 @@ MonoBehaviour:
       _node: {fileID: 1001768298}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: condition
-        node: {fileID: 1001768299}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  index: -1
   output: 0
 --- !u!114 &1001768299
 MonoBehaviour:
@@ -6156,14 +7204,12 @@ MonoBehaviour:
       _node: {fileID: 1001768309}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: condition
-        node: {fileID: 1001768307}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  index: -1
   output: 0
 --- !u!114 &1001768310
 MonoBehaviour:
@@ -6747,6 +7793,9 @@ MonoBehaviour:
   - {fileID: 1004178148}
   - {fileID: 1004178151}
   - {fileID: 1004178150}
+  - {fileID: 1004178152}
+  updateParametersNodes: []
+  endNodes:
   - {fileID: 1004178152}
 --- !u!114 &1004178129
 MonoBehaviour:
@@ -8376,14 +9425,12 @@ MonoBehaviour:
       _node: {fileID: 1077729487}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 1077729485}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  index: -1
   output: 0.07594936
 --- !u!114 &1077729488
 MonoBehaviour:
@@ -8404,6 +9451,9 @@ MonoBehaviour:
   - {fileID: 1077729486}
   - {fileID: 1077729485}
   - {fileID: 1077729484}
+  - {fileID: 1077729492}
+  updateParametersNodes: []
+  endNodes:
   - {fileID: 1077729492}
 --- !u!114 &1077729489
 MonoBehaviour:
@@ -8604,6 +9654,9 @@ MonoBehaviour:
   - {fileID: 1158217438}
   - {fileID: 1158217437}
   - {fileID: 1158217436}
+  - {fileID: 1158217446}
+  updateParametersNodes: []
+  endNodes:
   - {fileID: 1158217446}
 --- !u!114 &1158217434
 MonoBehaviour:
@@ -10449,6 +11502,9 @@ MonoBehaviour:
   - {fileID: 1781379581}
   - {fileID: 1781379580}
   - {fileID: 1781379579}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 1781379586}
 --- !u!114 &1781379586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10758,6 +11814,9 @@ MonoBehaviour:
   - {fileID: 1910369316}
   - {fileID: 1910369315}
   - {fileID: 1910369314}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 1910369319}
 --- !u!114 &1910369319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11036,6 +12095,7 @@ MonoBehaviour:
     keys:
     - _object
     - parameter
+    - materialIndex
     values:
     - _fieldName: _object
       _label: Renderer
@@ -11063,8 +12123,20 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: materialIndex
+      _label: 
+      _node: {fileID: 1914501156}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
   _object: {fileID: 1097564477}
   parameter: {fileID: 0}
+  materialIndex: 0
+  shared: 0
 --- !u!114 &1914501159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11130,6 +12202,9 @@ MonoBehaviour:
   - {fileID: 1914501156}
   - {fileID: 1914501148}
   - {fileID: 1914501145}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 1914501148}
 --- !u!114 &1914501161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12067,6 +13142,9 @@ MonoBehaviour:
   - {fileID: 1993175366}
   - {fileID: 1993175365}
   - {fileID: 1993175364}
+  - {fileID: 1993175378}
+  updateParametersNodes: []
+  endNodes:
   - {fileID: 1993175378}
 --- !u!114 &1993175296
 MonoBehaviour:
@@ -16407,6 +17485,9 @@ MonoBehaviour:
   - {fileID: 2018197693}
   - {fileID: 2018197684}
   - {fileID: 2018197697}
+  updateParametersNodes: []
+  endNodes:
+  - {fileID: 2018197697}
 --- !u!114 &2018197679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18538,6 +19619,10 @@ PrefabInstance:
       propertyPath: nodes.Array.size
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3055716343152795560, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
+      propertyPath: nodes.Array.data[8]
+      value: 
+      objectReference: {fileID: 1535908066}
     - target: {fileID: 3055716343152795565, guid: 82120f9a73db20d419679b7fa6d0cb09, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

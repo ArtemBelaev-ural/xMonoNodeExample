@@ -1,3 +1,7 @@
 [submodule "Assets/Scripts/XMonoNode"]
 	path = Assets/Scripts/XMonoNode
 	url = https://github.com/ArtemBelaev-ural/XMonoNode.git
+[submodule "Assets/Scripts/XMonoNode-Ural"]
+	path = Assets/Scripts/XMonoNode-Ural
+	url = https://github.com/KirillTurov-ural/XMonoNode.git
+	branch = main
